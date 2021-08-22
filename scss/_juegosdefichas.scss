@@ -1,0 +1,25 @@
+.gridJuegosFichas{display: grid;
+    grid-template-areas: 
+    "headJuegosFichas"
+    "contenidoJuegosFichas"
+    "footJuegosFichas";
+    
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 5fr 1fr;}
+    
+body.gridJuegosFichas header{grid-area: headJuegosFichas;}
+body.gridJuegosFichas section{grid-area: contenidoJuegosFichas;}
+body.gridJuegosFichas footer{grid-area: footJuegosFichas;}
+    
+.gridContenidoFichas{display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "fichasUno fichasDos fichasTres";
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 4fr;}
+    
+section.gridContenidoFichas article:first-of-type{grid-area: fichasUno;}
+section.gridContenidoFichas article:nth-of-type(2){grid-area: fichasDos;}
+section.gridContenidoFichas article:last-of-type article{grid-area: fichasTres;}
+section.gridContenidoFichas h1{grid-area: titulo;}

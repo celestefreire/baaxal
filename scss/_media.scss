@@ -1,0 +1,93 @@
+@media screen and (max-width: 768px){
+    
+#gridTablet{display: grid;
+    grid-template-areas: 
+    "head"
+    "contenido"
+    "foot";
+    grid-template-columns: auto;
+    grid-template-rows: 150px 1fr 150px;}
+
+    #gridTabletHeader{display: grid;
+    grid-template-areas: 
+    "logo carrito"
+    "nav nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;}
+
+    #logo{grid-area: logo;
+    justify-self: flex-start;}
+    #carrito{grid-area: carrito;
+    justify-self: flex-end;}
+    #menuTablet{grid-area: nav;
+    justify-self: center;
+    align-self: center;
+    width: 75%;}
+
+ul{justify-content: center;}
+
+#tabletSection{flex-direction: column;}
+#tabletHeader{flex-direction: row;}
+
+#responsiveArticle{width: 100%;
+    justify-content: flex-start;}
+
+#redesSocialesFoot{width: 100%;
+    margin-left: 20px;}
+}
+
+@media screen and (max-width: 576px){
+
+#menuTablet{grid-area: nav;
+    justify-self: flex-end;
+    align-self: center;
+    width: 100%;}
+
+#footerCelular{flex-direction:column-reverse;}
+
+#div1footCelular{width: 100%;}
+#div2footCelular{width: 100%;}
+
+footer div p{font-weight: 300;
+    margin: 10px;}
+
+footer div div{margin-top: 15px;}
+
+
+body.gridJuegosFichas{display: grid;
+    grid-template-areas: 
+    "head"
+    "contenido"
+    "foot";
+    grid-template-columns: auto;
+    grid-template-rows: 150px 1fr 150px;}
+
+header.flexMadre{display: grid;
+    grid-template-areas: 
+    "logo carrito"
+    "nav nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;}
+
+div.flexHijo1{grid-area: logo;
+    justify-self: flex-start;}
+div.flexHijo3{grid-area: carrito;
+    justify-self: flex-end;}
+div.flexHijo2{grid-area: nav;
+    justify-self: center;
+    align-self: center;
+    width: 75%;}
+
+section.gridContenidoFichas{display: flex;
+    flex-direction: column;}
+
+footer.flexMadre{display: flex;
+    flex-direction: column-reverse;}
+
+footer.flexMadre div div{display: flex;
+    flex-direction: row;}
+
+div.flexFooterRedesPadre{flex-wrap: nowrap;}
+div.flexFooterRedesPadre div{margin: 15px;}
+
+}

@@ -1,0 +1,25 @@
+.gridJuegosCartas{display: grid;
+    grid-template-areas: 
+    "headJuegosCartas"
+    "contenidoJuegosCartas"
+    "footJuegosCartas";
+    
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 5fr 1fr;}
+    
+body.gridJuegosCartas header{grid-area: headJuegosCartas;}
+body.gridJuegosCartas section{grid-area: contenidoJuegosCartas;}
+body.gridJuegosCartas footer{grid-area: footJuegosCartas;}
+    
+.gridContenidoCartas{display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "cartasUno cartasDos cartasTres";
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 4fr;}
+    
+section.gridContenidoCartas article:first-of-type{grid-area: cartasUno;}
+section.gridContenidoCartas article:nth-of-type(2){grid-area: cartasDos;}
+section.gridContenidoCartas article:last-of-type article{grid-area: cartasTres;}
+section.gridContenidoCartas h1{grid-area: titulo;}

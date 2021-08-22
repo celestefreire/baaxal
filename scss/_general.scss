@@ -1,0 +1,192 @@
+html{font-size: 62.5%;
+    box-sizing: border-box;}
+
+
+h1{color: #BA5C12; 
+    font-family: "inconsolata", monospace; 
+    font-size: 5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:lighter;}
+
+p{color: #1D80A0; 
+    font-family: "montserrat", sans-serif; 
+    font-size: 2rem;}
+
+.colorNegro{color:black}
+
+.negrita{font-weight: 600;}
+
+h2{color: #503685; 
+    font-family: "inconsolata", monospace; 
+    font-size: 4rem;
+    margin-top: 5px;
+    margin-bottom: 5px;}
+
+.pisaH1{color:#503685; 
+    font-family: "inconsolata", monospace; 
+    font-size: 5rem;}
+
+.parrafo2{color: #E0CA3C;}
+
+.colorNaranja{color: #BA5C12;}
+
+
+header{background-color: rgba(131, 118, 109, .2);}
+
+footer{background-color: rgba(131, 118, 109, .4);
+height: 150px;}
+
+nav ul li{color: #261132; 
+    font-size: 2rem; 
+    font-family: "inconsolata", monospace; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    background-color: rgba(241, 166, 67, 0.6);}
+
+nav ul li ul li{color: #3E2F5B; 
+    font-size: 2rem;}
+
+.pattern{background-image: url(../imagenes/prism.png);}
+
+.centradoTxt{text-align: center;}
+
+.espaciado{letter-spacing: 1px;}
+
+a{text-decoration: none;}
+
+.mayuscula{text-transform: uppercase;}
+
+label{font-size: 2rem;}
+
+.fontSizeQuince{font-size: 1.5rem;}
+
+ul{padding: 0;}
+
+#margen1{margin: 0;}
+
+
+
+ul{ list-style: none;
+    font-size: 0;}
+
+li{display: inline-block;
+    position: relative;
+    text-align: center;}
+
+ul ul{position: absolute;
+    display: none;}
+
+ul ul li{display: block;
+    width: 100%;}
+
+ul li:hover ul{display: block;}
+
+
+
+.flexMadre{display: flex;
+    flex-direction: row;
+    width: 100%;}
+    
+.header__logo{width: 50%;
+    align-self: flex-start;
+    flex-grow: 2;}
+
+.header__nav{display: flex;
+    width: 50%;
+    align-self: center;
+    flex-grow: 4;
+    margin-right: 10px;
+    flex-wrap: wrap;}
+
+nav{width: 100%;
+    z-index: 999;
+    margin-bottom: 10px;}
+
+.header__carrito{
+    align-self: center;
+    flex-grow: 1;
+    margin-right: 15px;}
+
+.flexNav{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;}
+
+.hijoNav{padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;}
+
+.header__logo--tamaño{max-width: 50%; min-width: 200px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;}
+
+.header__carrito--tamaño{width: 65px; height: 65px;}
+
+
+.footer__frase{width: 50%;
+    align-self: center;
+    justify-self: flex-start;
+    flex-grow: 1;}
+
+.footer__redes{
+    display: flex;
+    justify-content: flex-end;
+    width:50%;
+    align-self: center;
+    justify-self: flex-end;
+    flex-grow: 1;}
+
+.footer__redesContenedor{display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width:50%;}
+
+.footer__redesFacebook{width: 33%;
+    flex-grow: 1;
+    justify-self: flex-start;
+    align-self: center;}
+
+.footer__redesInstagram{width: 33%;
+    flex-grow: 1;
+    justify-self: center;
+    align-self: center;}
+
+.footer__redesWhatsapp{width: 33%;
+    flex-grow: 1;
+    justify-self: flex-end;
+    align-self: center;}
+
+.footer__redes--tamañoImagenes{max-width: 50%; min-width: 40px;}
+
+.footer__frase--posicion{justify-self: flex-start;
+    align-self: center;
+    margin-left: 20px;}
+
+
+
+.imagenesJuegos{max-width: 100%;}
+
+section.gridContenidoMesa article{padding: 10px;}
+section.gridContenidoCartas article{padding: 10px;}
+section.gridContenidoFichas article{padding: 10px;}
+
+h1{background: linear-gradient(to bottom, rgba(131, 118, 109, .2), rgba(131,118,109,.0));
+    margin-top: 0px;}
+    
+@mixin titulos($altoTitulo, $tamanioTitulo, $colorTitulo) {
+    height: $altoTitulo;
+    font-size: $tamanioTitulo;
+    color: $colorTitulo;
+}
+
+.tituloPaginas{@include titulos(100px, 6rem, #BA5C12)}
+

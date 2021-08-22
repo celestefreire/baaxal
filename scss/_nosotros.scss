@@ -1,0 +1,30 @@
+.gridNosotros{display: grid;
+    grid-template-areas: 
+    "headNosotros"
+    "contenidoNosotros"
+    "footNosotros";
+    
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 6fr 1fr;}
+
+body.gridNosotros header{grid-area: headNosotros;}
+body.gridNosotros section{grid-area: contenidoNosotros;}
+body.gridNosotros footer{grid-area: footNosotros;}
+
+.gridContenidoNosotros{display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "quienes historia futuro";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;}
+
+section.gridContenidoNosotros h1{grid-area: titulo;}
+section.gridContenidoNosotros article:first-of-type{grid-area: quienes;}
+section.gridContenidoNosotros article:nth-of-type(2){grid-area: historia;}
+section.gridContenidoNosotros article:last-of-type{grid-area: futuro;}
+
+section.gridContenidoNosotros article{display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+    

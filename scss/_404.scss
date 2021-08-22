@@ -1,0 +1,43 @@
+.grid404{display: grid;
+grid-template-areas: 
+"cabeza"
+"relleno";
+
+grid-template-columns: auto;
+grid-template-rows: 1fr 5fr;}
+
+body.grid404 header{grid-area: cabeza;}
+body.grid404 section{ grid-area: relleno;}
+
+.gridContenido404{display: grid;
+grid-template-areas: 
+". img ."
+". txt ."
+". acc .";
+
+grid-template-columns: 1fr 4fr 1fr;
+grid-template-rows: 4fr 1fr 1fr;
+
+justify-items: center;}
+
+section.gridContenido404 img{grid-area: img;}
+section.gridContenido404 p{grid-area: txt;
+text-align: center;}
+section.gridContenido404 div{grid-area: acc;}
+
+.boton404{height: 50px; width: 100px;
+margin-right: 10px;}
+
+.boton404bis{height: 50px; width: 100px;
+    margin-left: 10px;}
+
+.imagen404{width: 100%;}
+
+$botones404:(
+    Inicio:#645583,
+    Contacto:#BA5C12);
+
+@each $boton, $color in $botones404{
+    .btnColor--#{$boton}{
+background-color: $color;}
+}

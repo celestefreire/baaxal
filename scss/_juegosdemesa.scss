@@ -1,0 +1,25 @@
+.gridJuegosMesa{display: grid;
+    grid-template-areas: 
+    "headJuegosMesa"
+    "contenidoJuegosMesa"
+    "footJuegosMesa";
+    
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 5fr 1fr;}
+    
+body.gridJuegosMesa header{grid-area: headJuegosMesa;}
+body.gridJuegosMesa section{grid-area: contenidoJuegosMesa;}
+body.gridJuegosMesa footer{grid-area: footJuegosMesa;}
+    
+.gridContenidoMesa{display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "mesaUno mesaDos mesaTres";
+        
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 4fr;}
+    
+section.gridContenidoMesa article:first-of-type{grid-area: mesaUno;}
+section.gridContenidoMesa article:nth-of-type(2){grid-area: mesaDos;}
+section.gridContenidoMesa article:last-of-type article{grid-area: mesaTres;}
+section.gridContenidoMesa h1{grid-area: titulo;}    

@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/ihover.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="pattern gridContacto">
@@ -25,19 +26,35 @@
             <img src="../imagenes/prueba_01.png" alt="baaxal" class="header__logo--tamaño">
         </div>
         <div class="header__nav">
-            <nav>
-                <ul class="flexNav">
-                    <li class="hijoNav"><a href="../index.html">Inicio</a></li>
-                    <li class="hijoNav"><a href="./nosotros.html">Nosotros</a></li>
-                    <li class="hijoNav"><a href="./juegos.html">Juegos</a>
-                        <ul>
-                            <li><a href="./juegos/juegosdemesa.html">De Mesa</a></li>
-                            <li><a href="./juegos/juegosdecartas.html">De Cartas</a></li>
-                            <li><a href="./juegos/juegosdefichas.html">De Fichas</a></li>
-                        </ul>
+            <nav class="navbar navbar-expand-lg navbar-light" id="bg-warning">
+                <div class="container-fluid">
+                    <button class="navbar-toggler btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li class="hijoNav"><a href="./contacto.html">Contacto</a></li>
-                </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="./juegos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Juegos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./juegos/juegosdemesa.html">Juegos de Mesa</a></li>
+                            <li><a class="dropdown-item" href="./juegos/juegosdecartas.html">Juegos de Cartas</a></li>
+                            <li><a class="dropdown-item" href="./juegos/juegosdefichas.html">Juegos de Fichas</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </nav>
         </div>
         <div class="header__carrito">
@@ -46,7 +63,7 @@
     </header>
 </div>
 <div class="col-md-12 col-lg-12 col-sm-12">
-    <section class="gridContenidoContacto">
+    <section class="gridContenidoContacto" >
         <h1 class="tituloPaginas">Contacto</h1>
     <article class="divFormulario">
         <div class="fondoEncabezadoForm">
@@ -112,16 +129,42 @@
             </form>
     </div>
 </article>
+<article class="articleBurbujas">
+    <div class="ih-item circle effect13 from_left_and_right"><a href="#">
+        <div class="img"><img src="../imagenes/nosotros_01_1200-1200-min.jpg" alt="img" clas></div>
+        <div class="info">
+            <div class="info-back">
+            <h3>Únicos</h3>
+            <p>Trabajos Personalizados. ¡Escribinos!</p>
+            </div>
+        </div></a></div>
+    <div class="ih-item circle effect13 from_left_and_right" id="burbujaDerecha"><a href="#">
+        <div class="img"><img src="../imagenes/neuromino_02_1200-1200-min.jpg" alt="img"></div>
+        <div class="info">
+            <div class="info-back">
+            <h3>Por Mayor</h3>
+            <p>¿Queres vender nuestros juegos? ¡Escribinos!</p>
+            </div>
+        </div></a></div>
+    <div class="ih-item circle effect13 from_left_and_right"><a href="#">
+        <div class="img"><img src="../imagenes/fichasdemo_01_1200-1200-min.jpg" alt="img"></div>
+        <div class="info">
+            <div class="info-back">
+            <h3>Opinión</h3>
+            <p>Queremos escucharte. ¡Escribinos!</p>
+            </div>
+        </div></a></div>
+</article>
 </section>
 </div>
 <div class="col-md-12 col-lg-12 col-sm-12">
-    <footer class="flexMadre">
-        <div class="footer__frase">
+    <footer class="flexMadre gridTabletFooter" id="footerCelular" >
+        <div class="footer__frase" id="div1footCelular">
             <p class="colorNaranja negrita footer__frase--posicion">baaxal - jugar a jugar<br>
             una creación de Angel Freire</p>
         </div>
-        <div class="footer__redes">
-                <div class="footer__redesContenedor">
+        <div class="footer__redes" id="div2footCelular">
+                <div class="footer__redesContenedor" id="redesSocialesFoot">
                     <div class="footer__redesFacebook">
                         <a href="http://www.facebook.com/baaxaljugarajugar" target="_blanck"><img src="../imagenes/fb.png" alt="Encuentranos en Facebook" class="footer__redes--tamañoImagenes socialSombra--facebook"></a>
                     </div>
@@ -132,7 +175,7 @@
                         <a href="http://api.whatsapp.com/send?phone=5492944415786" target="_blanck"><img src="../imagenes/xp.png" alt="Contactanos en Whatsapp" class="footer__redes--tamañoImagenes socialSombra--whatsapp"></a>
                     </div>
                 </div>
-            </div>
+        </div>
     </footer>
 </div>
 </div>

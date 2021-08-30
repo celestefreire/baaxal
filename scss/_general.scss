@@ -44,7 +44,7 @@ nav ul li{color: #261132;
     font-family: "inconsolata", monospace; 
     font-weight: bold; 
     text-transform: uppercase;
-    background-color: rgba(241, 166, 67, 0.6);}
+}
 
 nav ul li ul li{color: #3E2F5B; 
     font-size: 2rem;}
@@ -74,13 +74,16 @@ ul{ list-style: none;
 
 li{display: inline-block;
     position: relative;
-    text-align: center;}
+    text-align: center;
+margin-right: 20px;
+margin-left: 20px;}
 
 ul ul{position: absolute;
     display: none;}
 
 ul ul li{display: block;
-    width: 100%;}
+    width: 100%;
+margin-left: 0px;}
 
 ul li:hover ul{display: block;}
 
@@ -189,4 +192,11 @@ h1{background: linear-gradient(to bottom, rgba(131, 118, 109, .2), rgba(131,118,
 }
 
 .tituloPaginas{@include titulos(100px, 6rem, #BA5C12)}
+
+#bg-warning{background-color: rgba(241, 166, 67, 0.2);}
+
+.piramideHamburguesa{width: 35%;
+height: 35%;}
+
+.dropdown-menu{background-color: rgba(241, 166, 67, 0.6);}
 

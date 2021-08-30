@@ -1,28 +1,38 @@
 @media screen and (max-width: 768px){
     
-#gridTablet{display: grid;
-    grid-template-areas: 
-    "head"
-    "contenido"
-    "foot";
-    grid-template-columns: auto;
-    grid-template-rows: 150px 1fr 150px;}
+.gridTabletHeader{display: grid;
+grid-template-areas: 
+"logo navegador carrito";
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;}
 
-    #gridTabletHeader{display: grid;
-    grid-template-areas: 
-    "logo carrito"
-    "nav nav";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;}
+div.header__nav{grid-area: navegador;
+justify-self: flex-start;}
+div.header__carrito{grid-area: carrito;
+justify-self: flex-end;}
+div.header__logo{grid-area: logo;}
 
-    #logo{grid-area: logo;
-    justify-self: flex-start;}
-    #carrito{grid-area: carrito;
-    justify-self: flex-end;}
-    #menuTablet{grid-area: nav;
-    justify-self: center;
-    align-self: center;
-    width: 75%;}
+li{margin-right: 0px;
+margin-left: 0px;}
+
+.gridTabletFooter{display: grid;
+grid-template-areas: 
+"redes"
+"frase";
+
+grid-template-columns: auto;
+grid-template-rows: 1fr 1fr;}
+
+div.footer__frase{grid-area: frase;
+justify-self: center;
+margin-top: 15px;
+text-align: center;}
+div.footer__redes{grid-area: redes;
+justify-self: center;
+margin-top: 25px;
+margin-left: 50px;}
+
+footer{height: 200px;}
 
 ul{justify-content: center;}
 
@@ -34,60 +44,77 @@ ul{justify-content: center;}
 
 #redesSocialesFoot{width: 100%;
     margin-left: 20px;}
-}
 
-@media screen and (max-width: 576px){
+// nosotros
 
-#menuTablet{grid-area: nav;
-    justify-self: flex-end;
-    align-self: center;
-    width: 100%;}
+#gridTabletNosotros{display: grid;
+grid-template-areas:
+"titulo" 
+"quienes"
+"historia"
+"futuro";
+grid-template-columns: auto;
+grid-template-rows: 0fr 1fr 1fr 1fr;}
 
-#footerCelular{flex-direction:column-reverse;}
+section.gridTabletNosotros h1{grid-area: titulo;}
+section.gridTabletNosotros article:first-of-type{grid-area: quienes;}
+section.gridTabletNosotros article:nth-of-type(2){grid-area: historia;}
+section.gridTabletNosotros article:last-of-type{grid-area: futuro;}
 
-#div1footCelular{width: 100%;}
-#div2footCelular{width: 100%;}
+div.divNosotrosOculto{display: inline-block;}
+div.bottom_to_top{display: none;}
 
-footer div p{font-weight: 300;
-    margin: 10px;}
+// nosotros
+// juegos de cartas
 
-footer div div{margin-top: 15px;}
-
-
-body.gridJuegosFichas{display: grid;
+#gridTabletCartas{display: grid;
     grid-template-areas: 
-    "head"
-    "contenido"
-    "foot";
+    "titulo"
+    "cartasUno"
+    "cartasDos" 
+    "cartasTres";
+    
+    grid-template-columns: auto ;
+    grid-template-rows: 0fr 3fr 3fr 3fr;}
+    
+section.gridContenidoCartas article:first-of-type{grid-area: cartasUno;}
+section.gridContenidoCartas article:nth-of-type(2){grid-area: cartasDos;}
+section.gridContenidoCartas article:last-of-type article{grid-area: cartasTres;}
+section.gridContenidoCartas h1{grid-area: titulo;}
+
+// juegos de fichas
+
+#gridTabletFichas{display: grid;
+    grid-template-areas: 
+    "titulo"
+    "fichasUno"
+    "fichasDos"
+    "fichasTres";
+    
+    grid-template-columns: auto ;
+    grid-template-rows: 0fr 3fr 3fr 3fr;}
+    
+section.gridContenidoFichas article:first-of-type{grid-area: fichasUno;}
+section.gridContenidoFichas article:nth-of-type(2){grid-area: fichasDos;}
+section.gridContenidoFichas article:last-of-type article{grid-area: fichasTres;}
+section.gridContenidoFichas h1{grid-area: titulo;}
+
+// juegos de mesa
+
+#gridTabletMesa{display: grid;
+    grid-template-areas: 
+    "titulo"
+    "mesaUno"
+    "mesaDos"
+    "mesaTres";
+        
     grid-template-columns: auto;
-    grid-template-rows: 150px 1fr 150px;}
+    grid-template-rows: 0fr 3fr 3fr 3fr;}
+    
+section.gridContenidoMesa article:first-of-type{grid-area: mesaUno;}
+section.gridContenidoMesa article:nth-of-type(2){grid-area: mesaDos;}
+section.gridContenidoMesa article:last-of-type article{grid-area: mesaTres;}
+section.gridContenidoMesa h1{grid-area: titulo;}
 
-header.flexMadre{display: grid;
-    grid-template-areas: 
-    "logo carrito"
-    "nav nav";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;}
-
-div.flexHijo1{grid-area: logo;
-    justify-self: flex-start;}
-div.flexHijo3{grid-area: carrito;
-    justify-self: flex-end;}
-div.flexHijo2{grid-area: nav;
-    justify-self: center;
-    align-self: center;
-    width: 75%;}
-
-section.gridContenidoFichas{display: flex;
-    flex-direction: column;}
-
-footer.flexMadre{display: flex;
-    flex-direction: column-reverse;}
-
-footer.flexMadre div div{display: flex;
-    flex-direction: row;}
-
-div.flexFooterRedesPadre{flex-wrap: nowrap;}
-div.flexFooterRedesPadre div{margin: 15px;}
 
 }

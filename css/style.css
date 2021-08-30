@@ -67,7 +67,6 @@ nav ul li {
   font-family: "inconsolata", monospace;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: rgba(241, 166, 67, 0.6);
 }
 
 nav ul li ul li {
@@ -120,6 +119,8 @@ li {
   display: inline-block;
   position: relative;
   text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 ul ul {
@@ -130,6 +131,7 @@ ul ul {
 ul ul li {
   display: block;
   width: 100%;
+  margin-left: 0px;
 }
 
 ul li:hover ul {
@@ -346,48 +348,79 @@ h1 {
   color: #BA5C12;
 }
 
+#bg-warning {
+  background-color: rgba(241, 166, 67, 0.2);
+}
+
+.piramideHamburguesa {
+  width: 35%;
+  height: 35%;
+}
+
+.dropdown-menu {
+  background-color: rgba(241, 166, 67, 0.6);
+}
+
 @media screen and (max-width: 768px) {
-  #gridTablet {
+  .gridTabletHeader {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "head" "contenido" "foot";
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: 150px 1fr 150px;
-        grid-template-rows: 150px 1fr 150px;
+        grid-template-areas: "logo navegador carrito";
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
-  #gridTabletHeader {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "logo carrito" "nav nav";
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
-  }
-  #logo {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: logo;
-    justify-self: flex-start;
-  }
-  #carrito {
+  div.header__nav {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
+    grid-area: navegador;
+    justify-self: flex-start;
+  }
+  div.header__carrito {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
     grid-area: carrito;
     justify-self: flex-end;
   }
-  #menuTablet {
+  div.header__logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
+  li {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .gridTabletFooter {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "redes" "frase";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  div.footer__frase {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: nav;
+    grid-area: frase;
     -ms-grid-column-align: center;
         justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 75%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  div.footer__redes {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: redes;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 25px;
+    margin-left: 50px;
+  }
+  footer {
+    height: 200px;
   }
   ul {
     -webkit-box-pack: center;
@@ -416,113 +449,131 @@ h1 {
     width: 100%;
     margin-left: 20px;
   }
-}
-
-@media screen and (max-width: 576px) {
-  #menuTablet {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: nav;
-    justify-self: flex-end;
-    -ms-flex-item-align: center;
-        align-self: center;
-    width: 100%;
-  }
-  #footerCelular {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  #div1footCelular {
-    width: 100%;
-  }
-  #div2footCelular {
-    width: 100%;
-  }
-  footer div p {
-    font-weight: 300;
-    margin: 10px;
-  }
-  footer div div {
-    margin-top: 15px;
-  }
-  body.gridJuegosFichas {
+  #gridTabletNosotros {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "head" "contenido" "foot";
+        grid-template-areas: "titulo"  "quienes" "historia" "futuro";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: 150px 1fr 150px;
-        grid-template-rows: 150px 1fr 150px;
+    -ms-grid-rows: 0fr 1fr 1fr 1fr;
+        grid-template-rows: 0fr 1fr 1fr 1fr;
   }
-  header.flexMadre {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "logo carrito" "nav nav";
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
-  }
-  div.flexHijo1 {
+  section.gridTabletNosotros h1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    grid-area: logo;
-    justify-self: flex-start;
+    -ms-grid-column-span: 3;
+    grid-area: titulo;
   }
-  div.flexHijo3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: carrito;
-    justify-self: flex-end;
-  }
-  div.flexHijo2 {
+  section.gridTabletNosotros article:first-of-type {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: nav;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 75%;
+    grid-area: quienes;
   }
-  section.gridContenidoFichas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  section.gridTabletNosotros article:nth-of-type(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: historia;
   }
-  footer.flexMadre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  section.gridTabletNosotros article:last-of-type {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: futuro;
   }
-  footer.flexMadre div div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  div.divNosotrosOculto {
+    display: inline-block;
   }
-  div.flexFooterRedesPadre {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  div.bottom_to_top {
+    display: none;
   }
-  div.flexFooterRedesPadre div {
-    margin: 15px;
+  #gridTabletCartas {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "cartasUno" "cartasDos"  "cartasTres";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 0fr 3fr 3fr 3fr;
+        grid-template-rows: 0fr 3fr 3fr 3fr;
+  }
+  section.gridContenidoCartas article:first-of-type {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cartasUno;
+  }
+  section.gridContenidoCartas article:nth-of-type(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cartasDos;
+  }
+  section.gridContenidoCartas article:last-of-type article {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: cartasTres;
+  }
+  section.gridContenidoCartas h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titulo;
+  }
+  #gridTabletFichas {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "fichasUno" "fichasDos" "fichasTres";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 0fr 3fr 3fr 3fr;
+        grid-template-rows: 0fr 3fr 3fr 3fr;
+  }
+  section.gridContenidoFichas article:first-of-type {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: fichasUno;
+  }
+  section.gridContenidoFichas article:nth-of-type(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: fichasDos;
+  }
+  section.gridContenidoFichas article:last-of-type article {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: fichasTres;
+  }
+  section.gridContenidoFichas h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titulo;
+  }
+  #gridTabletMesa {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "mesaUno" "mesaDos" "mesaTres";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 0fr 3fr 3fr 3fr;
+        grid-template-rows: 0fr 3fr 3fr 3fr;
+  }
+  section.gridContenidoMesa article:first-of-type {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: mesaUno;
+  }
+  section.gridContenidoMesa article:nth-of-type(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: mesaDos;
+  }
+  section.gridContenidoMesa article:last-of-type article {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: mesaTres;
+  }
+  section.gridContenidoMesa h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titulo;
   }
 }
 
@@ -646,15 +697,6 @@ a.pruebaRelativo img:hover {
           filter: drop-shadow(0px 0px 20px #33FF5E);
 }
 
-#navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 .gridNosotros {
   display: -ms-grid;
   display: grid;
@@ -686,11 +728,11 @@ body.gridNosotros footer {
 .gridContenidoNosotros {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "quienes historia futuro";
+      grid-template-areas: "titulo titulo titulo"  "quienes historia futuro";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 5fr;
-      grid-template-rows: 1fr 5fr;
+  -ms-grid-rows: 0fr 5fr;
+      grid-template-rows: 0fr 5fr;
 }
 
 section.gridContenidoNosotros h1 {
@@ -729,6 +771,51 @@ section.gridContenidoNosotros article {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.divNosotrosOculto {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "texto foto";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  display: none;
+}
+
+div.divNosotrosOculto div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: texto;
+}
+
+div.divNosotrosOculto img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto;
+}
+
+.ih-item.square {
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ih-item.square.effect6 .info p {
+  font-size: 2rem;
+  font-family: "montserrat", sans-serif;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #c1e2ec;
+}
+
+.ih-item.square.effect6 .info h3 {
+  background-color: #503685;
+  font-family: "inconsolata", monospace;
+  font-size: 3rem;
 }
 
 .gridJuegos {
@@ -841,11 +928,11 @@ body.gridContacto footer {
 .gridContenidoContacto {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" ". form .";
-  -ms-grid-columns: 1fr 3fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr;
-  -ms-grid-rows: 1fr 5fr;
-      grid-template-rows: 1fr 5fr;
+      grid-template-areas: "titulo titulo titulo" "burbuja burbuja burbuja" ". form .";
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 0fr 1fr 3fr;
+      grid-template-rows: 0fr 1fr 3fr;
 }
 
 section.gridContenidoContacto h1 {
@@ -855,10 +942,17 @@ section.gridContenidoContacto h1 {
   grid-area: titulo;
 }
 
-section.gridContenidoContacto article {
-  -ms-grid-row: 2;
+section.gridContenidoContacto article:first-of-type {
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: form;
+}
+
+section.gridContenidoContacto article:last-of-type {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: burbuja;
 }
 
 .divFormulario {
@@ -870,6 +964,7 @@ section.gridContenidoContacto article {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .fondoFormulario {
@@ -884,6 +979,7 @@ section.gridContenidoContacto article {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-family: "inconsolata", monospace;
 }
 
 .formulario {
@@ -922,6 +1018,64 @@ div.divConociste div:last-of-type {
 
 .btnColor--enviar {
   background-color: #BA5C12;
+}
+
+.articleBurbujas {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "burbuja1 burbuja2 burbuja3";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  margin-top: 20px;
+}
+
+article.articleBurbujas div:first-of-type {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: burbuja1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+article.articleBurbujas div:nth-of-type(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: burbuja2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+article.articleBurbujas div:last-of-type {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: burbuja3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.ih-item.circle .img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.ih-item.circle .info {
+  max-height: 200px;
+  max-width: 200px;
+  font-weight: bold;
+}
+
+.ih-item.circle.effect13 .info p {
+  font-size: 1.5rem;
+  font-family: "inconsolata", monospace;
+  padding-top: 0px;
+}
+
+.ih-item.circle.effect13 .info h3 {
+  font-size: 3rem;
+  font-family: "inconsolata", monospace;
+  padding-top: 35px;
 }
 
 .gridJuegosCartas {

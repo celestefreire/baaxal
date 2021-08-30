@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/ihover.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="pattern gridNosotros">
@@ -24,21 +25,37 @@
         <div class="header__logo" id="logo">
             <img src="../imagenes/prueba_01.png" alt="baaxal" class="header__logo--tamaño">
         </div>
-        <div class="header__nav" id="menuTablet">
-        <nav>
-            <ul class="flexNav">
-                <li class="hijoNav"><a href="../index.html">Inicio</a></li>
-                <li class="hijoNav"><a href="./nosotros.html">Nosotros</a></li>
-                <li class="hijoNav"><a href="./juegos.html">Juegos</a>
-                    <ul>
-                        <li><a href="./juegos/juegosdemesa.html">De Mesa</a></li>
-                        <li><a href="./juegos/juegosdecartas.html">De Cartas</a></li>
-                        <li><a href="./juegos/juegosdefichas.html">De Fichas</a></li>
+        <div class="header__nav" >
+            <nav class="navbar navbar-expand-lg navbar-light" id="bg-warning">
+                <div class="container-fluid">
+                    <button class="navbar-toggler btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="./juegos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Juegos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./juegos/juegosdemesa.html">Juegos de Mesa</a></li>
+                            <li><a class="dropdown-item" href="./juegos/juegosdecartas.html">Juegos de Cartas</a></li>
+                            <li><a class="dropdown-item" href="./juegos/juegosdefichas.html">Juegos de Fichas</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="hijoNav"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                    </div>
+                </div>
+            </nav>
         </div>
         <div class="header__carrito" id="Carrito">
             <a href="./carrito.html"><img src="../imagenes/carrito.png" alt="Carrito de Compras" class="header__carrito--tamaño wow animate__animated animate__flip""></a>
@@ -46,33 +63,63 @@
     </header>
 </div>
 <div class="col-md-12 col-lg-12 col-sm-12">
-    <section class="gridContenidoNosotros">
+    <section class="gridContenidoNosotros " id="gridTabletNosotros">
         <h1 class="tituloPaginas">Nosotros</h1>
         <article>
-            <h2>¿Quienes Somos?</h2>
-            <p>Si bien soy el creativo, hace falta mucho más que capacidad de creación para que un producto llegue a las manos del lector, o, en este caso, del jugador. Toda la familia y muchos amigos son los que participan detrás de cada juego, probando, criticando y generando nuevas ideas. Muchas veces algo insignificante que se presenta durante la prueba de un juego, genera un cambio sustancial en él, o incluso sienta las bases de otro nuevo. Esa es la ayuda invalorable de todos aquellos que me rodean.</p>
-            <img src="../imagenes/nosotros_01_1200-1200-min.jpg" alt="Nosotros somos quienes hacemos Baaxal" class="imagenesJuegos">
+            <div class="ih-item square effect6 bottom_to_top"><a href="#">
+                <div class="img"><img src="../imagenes/nosotros_01_1200-1200-min.jpg" alt="img"></div>
+                <div class="info">
+                    <h3>¿Quiénes Somos?</h3>
+                    <p>Si bien soy el creativo, hace falta mucho más que capacidad de creación para que un producto llegue a las manos del lector, o, en este caso, del jugador. Toda la familia y muchos amigos son los que participan detrás de cada juego, probando, criticando y generando nuevas ideas. Muchas veces algo insignificante que se presenta durante la prueba de un juego, genera un cambio sustancial en él, o incluso sienta las bases de otro nuevo. Esa es la ayuda invalorable de todos aquellos que me rodean.</p>
+                </div></a></div>
+                <div class="divNosotrosOculto">
+                    <div>
+                        <h2>¿Quienes Somos?</h2>
+                        <p>Si bien soy el creativo, hace falta mucho más que capacidad de creación para que un producto llegue a las manos del lector, o, en este caso, del jugador. Toda la familia y muchos amigos son los que participan detrás de cada juego, probando, criticando y generando nuevas ideas. Muchas veces algo insignificante que se presenta durante la prueba de un juego, genera un cambio sustancial en él, o incluso sienta las bases de otro nuevo. Esa es la ayuda invalorable de todos aquellos que me rodean.</p>
+                    </div>
+                    <img src="../imagenes/nosotros_01_1200-1200-min.jpg" alt="Nosotros somos quienes hacemos Baaxal" class="imagenesJuegos">
+                </div>
         </article>
         <article>
-            <h2>Un poco de historia</h2>
-            <p>Como Angel Freire llegué a ser "marca registrada" del juego gráfico en nuestro país. Abocado al juego gráfico desde 1971, tantos años "jugando" permitieron hacerme de un enorme bagaje de ideas para juegos que necesitan un espacio que va más allá de las páginas de un medio: naipes, fichas, tableros, dados, movimientos. Las ideas se fueron guardando, se revieron, se probaron, volvieron a reverse, a probarse, hasta tener el producto que sé que puede gustarle a quien juega, así como durante tantos años lo hice brindándome de igual modo al lector. Con Báaxal llegó el momento de ofrecérselas.</p>
-            <img src="../imagenes/nosotros_02_1200-1200-min.jpg" alt="Nuestra historia, los comienzos" class="imagenesJuegos">
+            <div class="ih-item square effect6 bottom_to_top"><a href="#">
+                <div class="img"><img src="../imagenes/nosotros_02_1200-1200-min.jpg" alt="img"></div>
+                <div class="info">
+                    <h3>Un poco de Historia</h3>
+                    <p>Como Angel Freire llegué a ser "marca registrada" del juego gráfico en nuestro país. Abocado al juego gráfico desde 1971, tantos años "jugando" permitieron hacerme de un enorme bagaje de ideas para juegos que necesitan un espacio que va más allá de las páginas de un medio: naipes, fichas, tableros, dados, movimientos. Las ideas se fueron guardando, se revieron, se probaron, volvieron a reverse, a probarse, hasta tener el producto que sé que puede gustarle a quien juega, así como durante tantos años lo hice brindándome de igual modo al lector. Con Báaxal llegó el momento de ofrecérselas.</p>
+                </div></a></div>
+                <div class="divNosotrosOculto">
+                    <div>
+                        <h2>Un poco de historia</h2>
+                        <p>Como Angel Freire llegué a ser "marca registrada" del juego gráfico en nuestro país. Abocado al juego gráfico desde 1971, tantos años "jugando" permitieron hacerme de un enorme bagaje de ideas para juegos que necesitan un espacio que va más allá de las páginas de un medio: naipes, fichas, tableros, dados, movimientos. Las ideas se fueron guardando, se revieron, se probaron, volvieron a reverse, a probarse, hasta tener el producto que sé que puede gustarle a quien juega, así como durante tantos años lo hice brindándome de igual modo al lector. Con Báaxal llegó el momento de ofrecérselas.</p>
+                    </div>
+                    <img src="../imagenes/nosotros_02_1200-1200-min.jpg" alt="Nuestra historia, los comienzos" class="imagenesJuegos">
+            </div>
         </article>
         <article>
-            <h2>Futuro</h2>
-            <p>El futuro es creación, creación constante. Creé decenas de juegos de palabras, de lógica y matemáticos que se publicaron durante muchísimos años en muchísimos medios. Por ahora, solo llevo creados una veintena de nuevos juegos no gráficos, así que falta mucho para llegar a varias decenas. En el camino habrá guerras, gnomos, piratas, brujas, monstruos y un sinfín de elementos. Ese es el horizonte.</p>
-            <img src="../imagenes/nosotros_03_1200-1200-min.jpg" alt="Futuro, nos queda mucho por recorrer" class="imagenesJuegos">
+            <div class="ih-item square effect6 bottom_to_top"><a href="#">
+                <div class="img"><img src="../imagenes/nosotros_03_1200-1200-min.jpg" alt="img"></div>
+                <div class="info">
+                    <h3>Futuro</h3>
+                    <p>El futuro es creación, creación constante. Creé decenas de juegos de palabras, de lógica y matemáticos que se publicaron durante muchísimos años en muchísimos medios. Por ahora, solo llevo creados una veintena de nuevos juegos no gráficos, así que falta mucho para llegar a varias decenas. En el camino habrá guerras, gnomos, piratas, brujas, monstruos y un sinfín de elementos. Ese es el horizonte.</p>
+                </div></a></div>
+            <div class="divNosotrosOculto">
+                <div>
+                    <h2>Futuro</h2>
+                    <p>El futuro es creación, creación constante. Creé decenas de juegos de palabras, de lógica y matemáticos que se publicaron durante muchísimos años en muchísimos medios. Por ahora, solo llevo creados una veintena de nuevos juegos no gráficos, así que falta mucho para llegar a varias decenas. En el camino habrá guerras, gnomos, piratas, brujas, monstruos y un sinfín de elementos. Ese es el horizonte.</p>
+                </div>
+                <img src="../imagenes/nosotros_03_1200-1200-min.jpg" alt="Futuro, nos queda mucho por recorrer" class="imagenesJuegos">
+            </div>
         </article>
     </section>
 </div>
 <div class="col-md-12 col-lg-12 col-sm-12">
-    <footer class="flexMadre">
-        <div class="footer__frase">
+    <footer class="flexMadre gridTabletFooter" id="footerCelular" >
+        <div class="footer__frase" id="div1footCelular">
             <p class="colorNaranja negrita footer__frase--posicion">baaxal - jugar a jugar<br>
             una creación de Angel Freire</p>
         </div>
-        <div class="footer__redes">
-                <div class="footer__redesContenedor">
+        <div class="footer__redes" id="div2footCelular">
+                <div class="footer__redesContenedor" id="redesSocialesFoot">
                     <div class="footer__redesFacebook">
                         <a href="http://www.facebook.com/baaxaljugarajugar" target="_blanck"><img src="../imagenes/fb.png" alt="Encuentranos en Facebook" class="footer__redes--tamañoImagenes socialSombra--facebook"></a>
                     </div>

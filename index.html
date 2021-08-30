@@ -19,24 +19,41 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12">
-        <header class="flexMadre" id="gridTabletHeader">
+        <header class="flexMadre gridTabletHeader" id="gridTabletHeader">
             <div class="header__logo" id="logo">
                 <img src="./imagenes/prueba_01.png" alt="baaxal" class="header__logo--tamaño">
             </div>
             <div class="header__nav">
-                <nav>
-                    <ul class="flexNav">
-                        <li class="hijoNav"><a href="index.html">Inicio</a></li>
-                        <li class="hijoNav"><a href="./paginas/nosotros.html">Nosotros</a></li>
-                        <li class="hijoNav"><a href="./paginas/juegos.html">Juegos</a>
-                            <ul>
-                                <li><a href="./paginas/juegos/juegosdemesa.html">De Mesa</a></li>
-                                <li><a href="./paginas/juegos/juegosdecartas.html">De Cartas</a></li>
-                                <li><a href="./paginas/juegos/juegosdefichas.html">De Fichas</a></li>
-                            </ul>
+
+                <nav class="navbar navbar-expand-lg navbar-light" id="bg-warning">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
-                        <li class="hijoNav"><a href="./paginas/contacto.html">Contacto</a></li>
-                    </ul>  
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./paginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  href="./paginas/juegos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Juegos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./paginas/juegos/juegosdemesa.html">Juegos de Mesa</a></li>
+                                <li><a class="dropdown-item" href="./paginas/juegos/juegosdecartas.html">Juegos de Cartas</a></li>
+                                <li><a class="dropdown-item" href="./paginas/juegos/juegosdefichas.html">Juegos de Fichas</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
             <div class="header__carrito" id="carrito">
@@ -63,7 +80,7 @@
     </section>
 </div>
 <div class="col-md-12 col-sm-12 col-lg-12">
-    <footer class="flexMadre" id="footerCelular" >
+    <footer class="flexMadre gridTabletFooter" id="footerCelular" >
         <div class="footer__frase" id="div1footCelular">
             <p class="colorNaranja negrita footer__frase--posicion">baaxal - jugar a jugar<br>
             una creación de Angel Freire</p>

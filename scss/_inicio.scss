@@ -1,15 +1,3 @@
-.gridMadre{display: grid;
-    grid-template-areas: 
-    "head"
-    "contenido"
-    "foot";
-    grid-template-columns: auto ;
-    grid-template-rows: 1fr 5fr 1fr;}
-    
-    header{grid-area: head;}
-    section{grid-area: contenido;}
-    footer{grid-area: foot;}
-
 .section__inicio{display: flex;
     flex-direction: row;
     justify-content: flex-start;

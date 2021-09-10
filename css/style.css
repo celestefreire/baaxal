@@ -577,32 +577,36 @@ h1 {
   }
 }
 
-.gridMadre {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "head" "contenido" "foot";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 5fr 1fr;
-      grid-template-rows: 1fr 5fr 1fr;
-}
-
-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: head;
-}
-
-section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contenido;
-}
-
-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: foot;
+@media screen and (max-width: 576px) {
+  .gridCelularHeader {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo carrito" "navegador carrito";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  div.header__nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: navegador;
+    justify-self: flex-start;
+    margin-left: 20px;
+  }
+  div.header__carrito {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: carrito;
+    justify-self: flex-end;
+    margin-right: 20px;
+  }
+  div.header__logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
 }
 
 .section__inicio {
@@ -695,34 +699,6 @@ a.pruebaRelativo img:hover {
 .socialSombra--whatsapp {
   -webkit-filter: drop-shadow(0px 0px 20px #33FF5E);
           filter: drop-shadow(0px 0px 20px #33FF5E);
-}
-
-.gridNosotros {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "headNosotros" "contenidoNosotros" "footNosotros";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 6fr 1fr;
-      grid-template-rows: 1fr 6fr 1fr;
-}
-
-body.gridNosotros header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: headNosotros;
-}
-
-body.gridNosotros section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contenidoNosotros;
-}
-
-body.gridNosotros footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footNosotros;
 }
 
 .gridContenidoNosotros {
@@ -897,34 +873,6 @@ article a h2 {
   margin-top: 0px;
 }
 
-.gridContacto {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "headContacto" "contenidoContacto" "footContacto";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 5fr 1fr;
-      grid-template-rows: 1fr 5fr 1fr;
-}
-
-body.gridContacto header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: headContacto;
-}
-
-body.gridContacto section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contenidoContacto;
-}
-
-body.gridContacto footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footContacto;
-}
-
 .gridContenidoContacto {
   display: -ms-grid;
   display: grid;
@@ -1078,34 +1026,6 @@ article.articleBurbujas div:last-of-type {
   padding-top: 35px;
 }
 
-.gridJuegosCartas {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "headJuegosCartas" "contenidoJuegosCartas" "footJuegosCartas";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 5fr 1fr;
-      grid-template-rows: 1fr 5fr 1fr;
-}
-
-body.gridJuegosCartas header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: headJuegosCartas;
-}
-
-body.gridJuegosCartas section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contenidoJuegosCartas;
-}
-
-body.gridJuegosCartas footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footJuegosCartas;
-}
-
 .gridContenidoCartas {
   display: -ms-grid;
   display: grid;
@@ -1141,34 +1061,6 @@ section.gridContenidoCartas h1 {
   grid-area: titulo;
 }
 
-.gridJuegosFichas {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "headJuegosFichas" "contenidoJuegosFichas" "footJuegosFichas";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 5fr 1fr;
-      grid-template-rows: 1fr 5fr 1fr;
-}
-
-body.gridJuegosFichas header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: headJuegosFichas;
-}
-
-body.gridJuegosFichas section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contenidoJuegosFichas;
-}
-
-body.gridJuegosFichas footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footJuegosFichas;
-}
-
 .gridContenidoFichas {
   display: -ms-grid;
   display: grid;
@@ -1202,34 +1094,6 @@ section.gridContenidoFichas h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: titulo;
-}
-
-.gridJuegosMesa {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "headJuegosMesa" "contenidoJuegosMesa" "footJuegosMesa";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 5fr 1fr;
-      grid-template-rows: 1fr 5fr 1fr;
-}
-
-body.gridJuegosMesa header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: headJuegosMesa;
-}
-
-body.gridJuegosMesa section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contenidoJuegosMesa;
-}
-
-body.gridJuegosMesa footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footJuegosMesa;
 }
 
 .gridContenidoMesa {

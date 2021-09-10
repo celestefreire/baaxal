@@ -1,16 +1,3 @@
-.gridJuegosCartas{display: grid;
-    grid-template-areas: 
-    "headJuegosCartas"
-    "contenidoJuegosCartas"
-    "footJuegosCartas";
-    
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 5fr 1fr;}
-    
-body.gridJuegosCartas header{grid-area: headJuegosCartas;}
-body.gridJuegosCartas section{grid-area: contenidoJuegosCartas;}
-body.gridJuegosCartas footer{grid-area: footJuegosCartas;}
-    
 .gridContenidoCartas{display: grid;
     grid-template-areas: 
     "titulo titulo titulo"

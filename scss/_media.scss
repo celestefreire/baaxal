@@ -116,5 +116,23 @@ section.gridContenidoMesa article:nth-of-type(2){grid-area: mesaDos;}
 section.gridContenidoMesa article:last-of-type article{grid-area: mesaTres;}
 section.gridContenidoMesa h1{grid-area: titulo;}
 
+}
+
+@media screen and (max-width: 576px){
+
+.gridCelularHeader{display: grid;
+    grid-template-areas: 
+    "logo carrito"
+    "navegador carrito";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;}
+    
+    div.header__nav{grid-area: navegador;
+    justify-self: flex-start;
+    margin-left: 20px;}
+    div.header__carrito{grid-area: carrito;
+    justify-self: flex-end;
+margin-right: 20px;}
+    div.header__logo{grid-area: logo;}
 
 }

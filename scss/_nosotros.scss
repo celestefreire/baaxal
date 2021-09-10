@@ -1,16 +1,3 @@
-.gridNosotros{display: grid;
-    grid-template-areas: 
-    "headNosotros"
-    "contenidoNosotros"
-    "footNosotros";
-    
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 6fr 1fr;}
-
-body.gridNosotros header{grid-area: headNosotros;}
-body.gridNosotros section{grid-area: contenidoNosotros;}
-body.gridNosotros footer{grid-area: footNosotros;}
-
 .gridContenidoNosotros{display: grid;
     grid-template-areas:
     "titulo titulo titulo" 

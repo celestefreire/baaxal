@@ -1,16 +1,3 @@
-.gridJuegosFichas{display: grid;
-    grid-template-areas: 
-    "headJuegosFichas"
-    "contenidoJuegosFichas"
-    "footJuegosFichas";
-    
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 5fr 1fr;}
-    
-body.gridJuegosFichas header{grid-area: headJuegosFichas;}
-body.gridJuegosFichas section{grid-area: contenidoJuegosFichas;}
-body.gridJuegosFichas footer{grid-area: footJuegosFichas;}
-    
 .gridContenidoFichas{display: grid;
     grid-template-areas: 
     "titulo titulo titulo"

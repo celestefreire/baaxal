@@ -1,16 +1,3 @@
-.gridContacto{display: grid;
-    grid-template-areas: 
-    "headContacto"
-    "contenidoContacto"
-    "footContacto";
-    
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 5fr 1fr;}
-
-body.gridContacto header{grid-area: headContacto;}
-body.gridContacto section{grid-area: contenidoContacto;}
-body.gridContacto footer{grid-area: footContacto;}
-
 .gridContenidoContacto{
     display: grid;
     grid-template-areas: 

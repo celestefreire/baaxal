@@ -1,16 +1,3 @@
-.gridJuegosMesa{display: grid;
-    grid-template-areas: 
-    "headJuegosMesa"
-    "contenidoJuegosMesa"
-    "footJuegosMesa";
-    
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 5fr 1fr;}
-    
-body.gridJuegosMesa header{grid-area: headJuegosMesa;}
-body.gridJuegosMesa section{grid-area: contenidoJuegosMesa;}
-body.gridJuegosMesa footer{grid-area: footJuegosMesa;}
-    
 .gridContenidoMesa{display: grid;
     grid-template-areas: 
     "titulo titulo titulo"

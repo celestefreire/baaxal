@@ -1,5 +1,7 @@
 @media screen and (max-width: 768px){
-    
+
+// header
+
 .gridTabletHeader{display: grid;
 grid-template-areas: 
 "logo navegador carrito";
@@ -15,13 +17,16 @@ div.header__logo{grid-area: logo;}
 li{margin-right: 0px;
 margin-left: 0px;}
 
+// footer
+
 .gridTabletFooter{display: grid;
 grid-template-areas: 
 "redes"
 "frase";
 
 grid-template-columns: auto;
-grid-template-rows: 1fr 1fr;}
+grid-template-rows: 0fr 0fr;
+}
 
 div.footer__frase{grid-area: frase;
 justify-self: center;
@@ -30,7 +35,22 @@ text-align: center;}
 div.footer__redes{grid-area: redes;
 justify-self: center;
 margin-top: 25px;
-margin-left: 50px;}
+margin-left: 0px;}
+
+div.footer__redesContenedor{display: grid;
+grid-template-areas: 
+"fb ig ws";
+
+grid-template-columns: auto;
+grid-template-rows: auto;}
+
+div.footer__redesFacebook{grid-area: fb;
+width: 100%;}
+div.footer__redesInstagram{grid-area: ig;
+width: 100%;}
+div.footer__redesWhatsapp{grid-area: ws;
+width: 100%;}
+
 
 footer{height: 200px;}
 
@@ -128,10 +148,14 @@ margin-left: 0px;
 display: flex;
 flex-direction: row;
 justify-self: center;
-align-items: center;}
+align-items: center;
+width: 75%;}
 
 div.effect13{display: none;}
 
+.textoJuegos{text-align: center;}
+
+article div:last-of-type{text-align: center;}
 }
 
 @media screen and (max-width: 576px){
@@ -150,5 +174,7 @@ div.effect13{display: none;}
     justify-self: flex-end;
 margin-right: 20px;}
     div.header__logo{grid-area: logo;}
+
+p.footer__frase--posicion{font-size: 1.5rem;}
 
 }

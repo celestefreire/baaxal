@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12">
-    <header class="flexMadre">
+    <header class="flexMadre gridTabletHeader gridCelularHeader">
         <div class="header__logo">
             <img src="../imagenes/prueba_01.png" alt="baaxal" class="header__logo--tamaño">
         </div>
@@ -65,70 +65,6 @@
 <div class="col-md-12 col-lg-12 col-sm-12">
     <section class="gridContenidoContacto">
         <h1 class="tituloPaginas">Contacto</h1>
-    <article class="divFormulario">
-        <div class="fondoEncabezadoForm">
-            <h2>¿Tenés alguna duda o consulta?</h2>
-            <p>Llena el formulario y nos contactaremos con vos a la brevedad!</p>
-        </div>
-        <div class="fondoFormulario">
-            <form action="" method="GET" class="divFormulario formulario">
-                <div>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Pepe Grillo" class="form-control form-control-lg">
-                </div>
-                <div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="email" placeholder="nombre@ejemplo.com" class="form-control form-control-lg">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="number" name="telefono" placeholder="2944302010" class="form-control form-control-lg">
-                </div>
-            <div>
-                    <label for="conociste">¿Cómo nos conociste?</label>
-                <div class="divConociste">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                        Redes
-                        </label>
-                </div>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                    Amigxs
-                    </label>
-                </div>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                    Otro
-                    </label>
-                </div>
-            </div>
-            </div>
-                <div>
-                    <label for="pais">¿De dónde sos?</label>
-                    <select class="form-select form-select-lg" aria-label="Default select example">
-                        <option selected>Argentina</option>
-                        <option value="uru">Uruguay</option>
-                        <option value="chi">Chile</option>
-                        <option value="bra">Brasil</option>
-                        <option value="par">Paraguay</option>
-                        <option value="per">Perú</option>
-                        <option value="bol">Bolivia</option>
-                        <option value="otros">Otro</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="consulta">Mensaje/Consulta</label>
-                    <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aquí" class="form-control form-control-lg"></textarea>
-                    <button type="reset" class="btn btnColor--limpiar btn-lg">Limpiar Formulario</button>
-                    <button type="submit" class="btn btnColor--enviar btn-lg">Enviar Formulario</button>
-                </div>
-            </form>
-    </div>
-</article>
 <article class="articleBurbujas" id="flexTabletBurbujas">
     <div class="ih-item circle effect13 from_left_and_right"><a href="#">
         <div class="img"><img src="../imagenes/nosotros_01_1200-1200-min.jpg" alt="img" clas></div>
@@ -184,6 +120,70 @@
                 <p>¡Escribinos!</p>
             </div>
     </div>
+</article>
+<article class="divFormulario">
+    <div class="fondoEncabezadoForm">
+        <h2 class="colorNaranja">¿Dudas o Consultas?</h2>
+        <p>Llena el formulario y nos contactaremos con vos a la brevedad!</p>
+    </div>
+    <div class="fondoFormulario">
+        <form action="" method="GET" class="divFormulario formulario">
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Pepe Grillo" class="form-control form-control-lg">
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" name="email" placeholder="nombre@ejemplo.com" class="form-control form-control-lg">
+            </div>
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input type="number" name="telefono" placeholder="2944302010" class="form-control form-control-lg">
+            </div>
+        <div>
+                <label for="conociste">¿Cómo nos conociste?</label>
+            <div class="divConociste">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    Redes
+                    </label>
+            </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Amigxs
+                </label>
+            </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Otro
+                </label>
+            </div>
+        </div>
+        </div>
+            <div>
+                <label for="pais">¿De dónde sos?</label>
+                <select class="form-select form-select-lg" aria-label="Default select example">
+                    <option selected>Argentina</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="chi">Chile</option>
+                    <option value="bra">Brasil</option>
+                    <option value="par">Paraguay</option>
+                    <option value="per">Perú</option>
+                    <option value="bol">Bolivia</option>
+                    <option value="otros">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="consulta">Mensaje/Consulta</label>
+                <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aquí" class="form-control form-control-lg"></textarea>
+                <button type="reset" class="btn btnColor--limpiar btn-lg">Limpiar Formulario</button>
+                <button type="submit" class="btn btnColor--enviar btn-lg">Enviar Formulario</button>
+            </div>
+        </form>
+</div>
 </article>
 </section>
 </div>

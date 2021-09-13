@@ -20,7 +20,8 @@ grid-template-areas:
 "texto foto";
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
-display: none;}
+display: none;
+margin-bottom: 30px;}
 
 div.divNosotrosOculto div{grid-area: texto;}
 div.divNosotrosOculto img{grid-area: foto;}
@@ -30,12 +31,13 @@ div.divNosotrosOculto img{grid-area: foto;}
     height: 100%;
     box-shadow: none;}
     
-    .ih-item.square.effect6 .info p{font-size: 2rem;
+.ih-item.square.effect6 .info p{font-size: 2rem;
     font-family: "montserrat", sans-serif;
     line-height: 2rem;
     font-weight: bold;
     color: #c1e2ec;}
     
-    .ih-item.square.effect6 .info h3{background-color: #503685;
+.ih-item.square.effect6 .info h3{background-color: #503685;
     font-family: "inconsolata", monospace;
     font-size: 3rem;}
+

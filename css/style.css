@@ -340,10 +340,6 @@ h1 {
   color: #BA5C12;
 }
 
-#bg-warning {
-  background-color: rgba(241, 166, 67, 0.2);
-}
-
 .piramideHamburguesa {
   width: 35%;
   height: 35%;
@@ -390,8 +386,8 @@ h1 {
         grid-template-areas: "redes" "frase";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 0fr 0fr;
+        grid-template-rows: 0fr 0fr;
   }
   div.footer__frase {
     -ms-grid-row: 2;
@@ -409,7 +405,34 @@ h1 {
     -ms-grid-column-align: center;
         justify-self: center;
     margin-top: 25px;
-    margin-left: 50px;
+    margin-left: 0px;
+  }
+  div.footer__redesContenedor {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "fb ig ws";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  div.footer__redesFacebook {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: fb;
+    width: 100%;
+  }
+  div.footer__redesInstagram {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: ig;
+    width: 100%;
+  }
+  div.footer__redesWhatsapp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: ws;
+    width: 100%;
   }
   footer {
     height: 200px;
@@ -597,9 +620,16 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 75%;
   }
   div.effect13 {
     display: none;
+  }
+  .textoJuegos {
+    text-align: center;
+  }
+  article div:last-of-type {
+    text-align: center;
   }
 }
 
@@ -632,6 +662,9 @@ h1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: logo;
+  }
+  p.footer__frase--posicion {
+    font-size: 1.5rem;
   }
 }
 
@@ -784,6 +817,7 @@ section.gridContenidoNosotros article {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   display: none;
+  margin-bottom: 30px;
 }
 
 div.divNosotrosOculto div {
@@ -900,8 +934,6 @@ article a h2 {
 }
 
 .gridContenidoContacto {
-  display: -ms-grid;
-  display: grid;
       grid-template-areas: "titulo titulo titulo" "burbuja burbuja burbuja" "form form form";
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;

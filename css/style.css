@@ -44,10 +44,6 @@ h2 {
   font-size: 5rem;
 }
 
-.parrafo2 {
-  color: #E0CA3C;
-}
-
 .colorNaranja {
   color: #BA5C12;
 }
@@ -80,10 +76,6 @@ nav ul li ul li {
 
 .centradoTxt {
   text-align: center;
-}
-
-.espaciado {
-  letter-spacing: 1px;
 }
 
 a {
@@ -575,6 +567,40 @@ h1 {
     -ms-grid-column-span: 3;
     grid-area: titulo;
   }
+  #flexTabletBurbujas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  div.divContactoOculto {
+    display: inline-block;
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    justify-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.effect13 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -876,7 +902,7 @@ article a h2 {
 .gridContenidoContacto {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "burbuja burbuja burbuja" ". form .";
+      grid-template-areas: "titulo titulo titulo" "burbuja burbuja burbuja" "form form form";
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
   -ms-grid-rows: 0fr 1fr 3fr;
@@ -892,7 +918,8 @@ section.gridContenidoContacto h1 {
 
 section.gridContenidoContacto article:first-of-type {
   -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: form;
 }
 
@@ -928,6 +955,7 @@ section.gridContenidoContacto article:last-of-type {
       -ms-grid-row-align: center;
       align-self: center;
   font-family: "inconsolata", monospace;
+  text-align: center;
 }
 
 .formulario {
@@ -983,11 +1011,10 @@ article.articleBurbujas div:first-of-type {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: burbuja1;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: flex-end;
 }
 
-article.articleBurbujas div:nth-of-type(2) {
+#segundaBurbuja {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: burbuja2;
@@ -999,8 +1026,7 @@ article.articleBurbujas div:last-of-type {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: burbuja3;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: flex-start;
 }
 
 .ih-item.circle .img {
@@ -1024,6 +1050,27 @@ article.articleBurbujas div:last-of-type {
   font-size: 3rem;
   font-family: "inconsolata", monospace;
   padding-top: 35px;
+}
+
+.divContactoOculto {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.titulosBurbujas {
+  color: #503685;
+  font-family: "inconsolata", monospace;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.parrafosContacto {
+  margin-bottom: 0px;
+}
+
+.margenBurbujas {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .gridContenidoCartas {

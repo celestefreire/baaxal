@@ -64,7 +64,6 @@ section.gridTabletNosotros article:last-of-type{grid-area: futuro;}
 div.divNosotrosOculto{display: inline-block;}
 div.bottom_to_top{display: none;}
 
-// nosotros
 // juegos de cartas
 
 #gridTabletCartas{display: grid;
@@ -115,6 +114,23 @@ section.gridContenidoMesa article:first-of-type{grid-area: mesaUno;}
 section.gridContenidoMesa article:nth-of-type(2){grid-area: mesaDos;}
 section.gridContenidoMesa article:last-of-type article{grid-area: mesaTres;}
 section.gridContenidoMesa h1{grid-area: titulo;}
+
+// contacto
+
+#flexTabletBurbujas{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;}
+
+div.divContactoOculto{display: inline-block;
+margin-left: 0px;
+display: flex;
+flex-direction: row;
+justify-self: center;
+align-items: center;}
+
+div.effect13{display: none;}
 
 }
 

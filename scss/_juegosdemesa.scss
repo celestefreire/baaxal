@@ -4,7 +4,7 @@
     "mesaUno mesaDos mesaTres";
         
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 4fr;}
+    grid-template-rows: 0fr 4fr;}
     
 section.gridContenidoMesa article:first-of-type{grid-area: mesaUno;}
 section.gridContenidoMesa article:nth-of-type(2){grid-area: mesaDos;}

@@ -149,18 +149,15 @@ section.gridContenidoMesa h1{grid-area: titulo;}
 flex-direction: column;
 justify-content: center;
 align-items: center;
-}
+margin: 10px;}
 
 div.divContactoOculto{display: inline-block;
 margin-left: 0px;
 display: flex;
 flex-direction: row;
-justify-self: center;
+justify-self: start;
 align-items: center;
-width: 75%;}
-
-div.divContactoOculto div.circle div.img{max-width: 75%px;
-max-height: 75%px;}
+overflow: hidden;}
 
 div.effect13{display: none;}
 
@@ -188,7 +185,27 @@ margin-right: 20px;}
 
 p.footer__frase--posicion{font-size: 1.5rem;}
 
+// contacto
+
+#flexTabletBurbujas{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;}
+    
+
 div.divContactoOculto div.circle div.img{max-width: 75%;
     max-height: 75%;}
+
+.ih-item.circle{width: 200px;
+height: 200px;}
+
+h2.titulosBurbujas{
+    font-size: 3rem;
+    font-weight: 300;}
+
+div.divContactoOculto p{font-size: 1.7rem;}
+div.divContactoOculto p:last-of-type{font-weight: bold;}
+
+
 
 }

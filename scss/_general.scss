@@ -181,13 +181,12 @@ section.gridContenidoFichas article{padding: 10px;}
 h1{background: linear-gradient(to bottom, rgba(131, 118, 109, .2), rgba(131,118,109,.0));
     margin-top: 0px;}
     
-@mixin titulos($altoTitulo, $tamanioTitulo, $colorTitulo) {
-    height: $altoTitulo;
+@mixin titulos( $tamanioTitulo, $colorTitulo) {
     font-size: $tamanioTitulo;
     color: $colorTitulo;
 }
 
-.tituloPaginas{@include titulos(100px, 6rem, #BA5C12)}
+.tituloPaginas{@include titulos( 5rem, #BA5C12)}
 
 
 .piramideHamburguesa{width: 35%;

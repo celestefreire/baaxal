@@ -335,8 +335,7 @@ h1 {
 }
 
 .tituloPaginas {
-  height: 100px;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #BA5C12;
 }
 
@@ -615,6 +614,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 10px;
   }
   div.divContactoOculto {
     display: inline-block;
@@ -626,15 +626,11 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    justify-self: center;
+    justify-self: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 75%;
-  }
-  div.divContactoOculto div.circle div.img {
-    max-width: 75%px;
-    max-height: 75%px;
+    overflow: hidden;
   }
   div.effect13 {
     display: none;
@@ -680,9 +676,36 @@ h1 {
   p.footer__frase--posicion {
     font-size: 1.5rem;
   }
+  #flexTabletBurbujas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px;
+  }
   div.divContactoOculto div.circle div.img {
     max-width: 75%;
     max-height: 75%;
+  }
+  .ih-item.circle {
+    width: 200px;
+    height: 200px;
+  }
+  h2.titulosBurbujas {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  div.divContactoOculto p {
+    font-size: 1.7rem;
+  }
+  div.divContactoOculto p:last-of-type {
+    font-weight: bold;
   }
 }
 
@@ -951,35 +974,6 @@ article a h2 {
   margin-top: 0px;
 }
 
-.gridContenidoContacto {
-      grid-template-areas: "titulo titulo" "burbuja burbuja burbuja" "form form form";
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
-  -ms-grid-rows: 0fr 1fr 3fr;
-      grid-template-rows: 0fr 1fr 3fr;
-}
-
-section.gridContenidoContacto h1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: titulo;
-}
-
-section.gridContenidoContacto article:first-of-type {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: form;
-}
-
-section.gridContenidoContacto article:last-of-type {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: burbuja;
-}
-
 .divFormulario {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1143,8 +1137,8 @@ article.articleBurbujas div:last-of-type {
       grid-template-areas: "titulo titulo titulo" "cartasUno cartasDos cartasTres";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 4fr;
-      grid-template-rows: 1fr 4fr;
+  -ms-grid-rows: 0fr 4fr;
+      grid-template-rows: 0fr 4fr;
 }
 
 section.gridContenidoCartas article:first-of-type {
@@ -1184,8 +1178,8 @@ section.gridContenidoCartas h1 {
       grid-template-areas: "titulo titulo titulo" "fichasUno fichasDos fichasTres";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 4fr;
-      grid-template-rows: 1fr 4fr;
+  -ms-grid-rows: 0fr 4fr;
+      grid-template-rows: 0fr 4fr;
 }
 
 section.gridContenidoFichas article:first-of-type {
@@ -1219,8 +1213,8 @@ section.gridContenidoFichas h1 {
       grid-template-areas: "titulo titulo titulo" "mesaUno mesaDos mesaTres";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 4fr;
-      grid-template-rows: 1fr 4fr;
+  -ms-grid-rows: 0fr 4fr;
+      grid-template-rows: 0fr 4fr;
 }
 
 section.gridContenidoMesa article:first-of-type {

@@ -74,14 +74,22 @@ grid-template-areas:
 "historia"
 "futuro";
 grid-template-columns: auto;
-grid-template-rows: 0fr 1fr 1fr 1fr;}
+grid-template-rows: 0fr 0fr 0fr 0fr;}
 
 section.gridTabletNosotros h1{grid-area: titulo;}
 section.gridTabletNosotros article:first-of-type{grid-area: quienes;}
 section.gridTabletNosotros article:nth-of-type(2){grid-area: historia;}
 section.gridTabletNosotros article:last-of-type{grid-area: futuro;}
 
-div.divNosotrosOculto{display: inline-block;}
+div.divNosotrosOculto{display: inline-block;
+    padding: 10px;
+    background-color: rgba(70, 65, 60, 0.2);}
+
+div.divNosotrosOculto div.centradoTxt h2{
+    color: rgba(255, 255, 255, 0.685);
+    text-transform: uppercase;
+    background-color: rgba(143, 86, 209, 0.2);}
+
 div.bottom_to_top{display: none;}
 
 // juegos de cartas
@@ -141,7 +149,7 @@ section.gridContenidoMesa h1{grid-area: titulo;}
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 100%;}
+}
 
 div.divContactoOculto{display: inline-block;
 margin-left: 0px;
@@ -150,6 +158,9 @@ flex-direction: row;
 justify-self: center;
 align-items: center;
 width: 75%;}
+
+div.divContactoOculto div.circle div.img{max-width: 75%px;
+max-height: 75%px;}
 
 div.effect13{display: none;}
 
@@ -176,5 +187,8 @@ margin-right: 20px;}
     div.header__logo{grid-area: logo;}
 
 p.footer__frase--posicion{font-size: 1.5rem;}
+
+div.divContactoOculto div.circle div.img{max-width: 75%;
+    max-height: 75%;}
 
 }

@@ -10,3 +10,7 @@ section.gridContenidoCartas article:first-of-type{grid-area: cartasUno;}
 section.gridContenidoCartas article:nth-of-type(2){grid-area: cartasDos;}
 section.gridContenidoCartas article:last-of-type article{grid-area: cartasTres;}
 section.gridContenidoCartas h1{grid-area: titulo;}
+
+.titulosPaginasJuegos{padding: 10px;
+    color: rgba(255, 255, 255, 0.685);
+    background-color: rgba(143, 86, 209, 0.2);}

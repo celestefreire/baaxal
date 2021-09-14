@@ -189,11 +189,10 @@ h1{background: linear-gradient(to bottom, rgba(131, 118, 109, .2), rgba(131,118,
 
 .tituloPaginas{@include titulos(100px, 6rem, #BA5C12)}
 
-// #bg-warning{background-color: rgba(241, 166, 67, 0.2);}
 
 .piramideHamburguesa{width: 35%;
 height: 35%;}
 
 .dropdown-menu{background-color: rgba(241, 166, 67, 0.6);}
 
-
+.navbar-dark .navbar-nav .nav-link{color: #ce9136;}

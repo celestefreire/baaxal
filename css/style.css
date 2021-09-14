@@ -349,6 +349,10 @@ h1 {
   background-color: rgba(241, 166, 67, 0.6);
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #ce9136;
+}
+
 @media screen and (max-width: 768px) {
   .gridTabletHeader {
     display: -ms-grid;
@@ -470,8 +474,8 @@ h1 {
         grid-template-areas: "titulo"  "quienes" "historia" "futuro";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: 0fr 1fr 1fr 1fr;
-        grid-template-rows: 0fr 1fr 1fr 1fr;
+    -ms-grid-rows: 0fr 0fr 0fr 0fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
   }
   section.gridTabletNosotros h1 {
     -ms-grid-row: 1;
@@ -496,6 +500,13 @@ h1 {
   }
   div.divNosotrosOculto {
     display: inline-block;
+    padding: 10px;
+    background-color: rgba(70, 65, 60, 0.2);
+  }
+  div.divNosotrosOculto div.centradoTxt h2 {
+    color: rgba(255, 255, 255, 0.685);
+    text-transform: uppercase;
+    background-color: rgba(143, 86, 209, 0.2);
   }
   div.bottom_to_top {
     display: none;
@@ -604,7 +615,6 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
   }
   div.divContactoOculto {
     display: inline-block;
@@ -621,6 +631,10 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     width: 75%;
+  }
+  div.divContactoOculto div.circle div.img {
+    max-width: 75%px;
+    max-height: 75%px;
   }
   div.effect13 {
     display: none;
@@ -665,6 +679,10 @@ h1 {
   }
   p.footer__frase--posicion {
     font-size: 1.5rem;
+  }
+  div.divContactoOculto div.circle div.img {
+    max-width: 75%;
+    max-height: 75%;
   }
 }
 
@@ -845,11 +863,11 @@ div.divNosotrosOculto img {
   font-family: "montserrat", sans-serif;
   line-height: 2rem;
   font-weight: bold;
-  color: #c1e2ec;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .ih-item.square.effect6 .info h3 {
-  background-color: #503685;
+  background-color: rgba(143, 86, 209, 0.2);
   font-family: "inconsolata", monospace;
   font-size: 3rem;
 }
@@ -934,7 +952,7 @@ article a h2 {
 }
 
 .gridContenidoContacto {
-      grid-template-areas: "titulo titulo titulo" "burbuja burbuja burbuja" "form form form";
+      grid-template-areas: "titulo titulo" "burbuja burbuja burbuja" "form form form";
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
   -ms-grid-rows: 0fr 1fr 3fr;
@@ -982,6 +1000,14 @@ section.gridContenidoContacto article:last-of-type {
       align-self: center;
 }
 
+div.fondoEncabezadoForm h2 {
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.685);
+  background-color: rgba(143, 86, 209, 0.2);
+}
+
 .fondoEncabezadoForm {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1005,6 +1031,10 @@ section.gridContenidoContacto article:last-of-type {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+textarea {
+  margin-bottom: 10px;
 }
 
 div.divConociste div:first-of-type {
@@ -1090,10 +1120,12 @@ article.articleBurbujas div:last-of-type {
 }
 
 .titulosBurbujas {
-  color: #503685;
+  color: rgba(255, 255, 255, 0.685);
+  background-color: rgba(143, 86, 209, 0.2);
+  text-transform: uppercase;
   font-family: "inconsolata", monospace;
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .parrafosContacto {
@@ -1138,6 +1170,12 @@ section.gridContenidoCartas h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: titulo;
+}
+
+.titulosPaginasJuegos {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.685);
+  background-color: rgba(143, 86, 209, 0.2);
 }
 
 .gridContenidoFichas {

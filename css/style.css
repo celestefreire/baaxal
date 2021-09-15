@@ -5,6 +5,19 @@ html {
           box-sizing: border-box;
 }
 
+.pattern {
+  background-image: url(../imagenes/prism.png);
+}
+
+header {
+  background-color: rgba(131, 118, 109, 0.2);
+}
+
+footer {
+  background-color: rgba(131, 118, 109, 0.4);
+  height: 150px;
+}
+
 h1 {
   color: #BA5C12;
   font-family: "inconsolata", monospace;
@@ -20,10 +33,6 @@ p {
   color: #1D80A0;
   font-family: "montserrat", sans-serif;
   font-size: 2rem;
-}
-
-.colorNegro {
-  color: black;
 }
 
 .negrita {
@@ -48,32 +57,6 @@ h2 {
   color: #BA5C12;
 }
 
-header {
-  background-color: rgba(131, 118, 109, 0.2);
-}
-
-footer {
-  background-color: rgba(131, 118, 109, 0.4);
-  height: 150px;
-}
-
-nav ul li {
-  color: #261132;
-  font-size: 2rem;
-  font-family: "inconsolata", monospace;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-nav ul li ul li {
-  color: #3E2F5B;
-  font-size: 2rem;
-}
-
-.pattern {
-  background-image: url(../imagenes/prism.png);
-}
-
 .centradoTxt {
   text-align: center;
 }
@@ -90,21 +73,23 @@ label {
   font-size: 2rem;
 }
 
-.fontSizeQuince {
-  font-size: 1.5rem;
+nav ul li {
+  color: #261132;
+  font-size: 2rem;
+  font-family: "inconsolata", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-ul {
-  padding: 0;
-}
-
-#margen1 {
-  margin: 0;
+nav ul li ul li {
+  color: #3E2F5B;
+  font-size: 2rem;
 }
 
 ul {
   list-style: none;
   font-size: 0;
+  padding: 0;
 }
 
 li {
@@ -128,6 +113,25 @@ ul ul li {
 
 ul li:hover ul {
   display: block;
+}
+
+.piramideHamburguesa {
+  width: 35%;
+  height: 35%;
+}
+
+.dropdown-menu {
+  background-color: rgba(241, 166, 67, 0.6);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ce9136;
+}
+
+nav {
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 10px;
 }
 
 .flexMadre {
@@ -163,12 +167,6 @@ ul li:hover ul {
   margin-right: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-nav {
-  width: 100%;
-  z-index: 999;
-  margin-bottom: 10px;
 }
 
 .header__carrito {
@@ -312,26 +310,25 @@ nav {
   margin-left: 20px;
 }
 
-.imagenesJuegos {
-  max-width: 100%;
-}
-
-section.gridContenidoMesa article {
-  padding: 10px;
-}
-
-section.gridContenidoCartas article {
-  padding: 10px;
-}
-
-section.gridContenidoFichas article {
-  padding: 10px;
-}
-
 h1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(131, 118, 109, 0.2)), to(rgba(131, 118, 109, 0)));
   background: linear-gradient(to bottom, rgba(131, 118, 109, 0.2), rgba(131, 118, 109, 0));
   margin-top: 0px;
+}
+
+.socialSombra--facebook {
+  -webkit-filter: drop-shadow(0px 0px 20px #2234CF);
+          filter: drop-shadow(0px 0px 20px #2234CF);
+}
+
+.socialSombra--instagram {
+  -webkit-filter: drop-shadow(0px 0px 20px #AA22CF);
+          filter: drop-shadow(0px 0px 20px #AA22CF);
+}
+
+.socialSombra--whatsapp {
+  -webkit-filter: drop-shadow(0px 0px 20px #33FF5E);
+          filter: drop-shadow(0px 0px 20px #33FF5E);
 }
 
 .tituloPaginas {
@@ -339,17 +336,10 @@ h1 {
   color: #BA5C12;
 }
 
-.piramideHamburguesa {
-  width: 35%;
-  height: 35%;
-}
-
-.dropdown-menu {
-  background-color: rgba(241, 166, 67, 0.6);
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #ce9136;
+.titulosPaginasJuegos {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.685);
+  background-color: rgba(143, 86, 209, 0.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -378,10 +368,6 @@ h1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: logo;
-  }
-  li {
-    margin-right: 0px;
-    margin-left: 0px;
   }
   .gridTabletFooter {
     display: -ms-grid;
@@ -440,10 +426,9 @@ h1 {
   footer {
     height: 200px;
   }
-  ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #redesSocialesFoot {
+    width: 100%;
+    margin-left: 20px;
   }
   #tabletSection {
     -webkit-box-orient: vertical;
@@ -451,21 +436,11 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #tabletHeader {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   #responsiveArticle {
     width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  #redesSocialesFoot {
-    width: 100%;
-    margin-left: 20px;
   }
   #gridTabletNosotros {
     display: -ms-grid;
@@ -786,21 +761,6 @@ a.pruebaRelativo img:hover {
   font-family: "inconsolata";
 }
 
-.socialSombra--facebook {
-  -webkit-filter: drop-shadow(0px 0px 20px #2234CF);
-          filter: drop-shadow(0px 0px 20px #2234CF);
-}
-
-.socialSombra--instagram {
-  -webkit-filter: drop-shadow(0px 0px 20px #AA22CF);
-          filter: drop-shadow(0px 0px 20px #AA22CF);
-}
-
-.socialSombra--whatsapp {
-  -webkit-filter: drop-shadow(0px 0px 20px #33FF5E);
-          filter: drop-shadow(0px 0px 20px #33FF5E);
-}
-
 .gridContenidoNosotros {
   display: -ms-grid;
   display: grid;
@@ -893,85 +853,6 @@ div.divNosotrosOculto img {
   background-color: rgba(143, 86, 209, 0.6);
   font-family: "inconsolata", monospace;
   font-size: 3rem;
-}
-
-.gridJuegos {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "headJuegos" "contenidoJuegos" "footJuegos";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  grid-auto-rows: 1fr 5fr 1fr;
-}
-
-body.gridJuegos header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: headJuegos;
-}
-
-body.gridJuegos section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: contenidoJuegos;
-}
-
-body.gridJuegos footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footJuegos;
-}
-
-.article__juegos {
-  position: relative;
-  margin: 0px;
-}
-
-.articleJuegos__fondoJuegosCartas {
-  background-image: url(../imagenes/background_juegos03.jpg);
-  height: 350px;
-}
-
-.articleJuegos__fondoJuegosFichas {
-  background-image: url(../imagenes/background_juegos04.jpg);
-  height: 350px;
-}
-
-.articleJuegos__fondoJuegosMesa {
-  background-image: url(../imagenes/background_juegos05.jpg);
-  height: 350px;
-}
-
-article a h2 {
-  position: absolute;
-  bottom: 100px;
-  right: 10px;
-  margin: 0px;
-}
-
-.tituloJuegos__izquierda {
-  position: absolute;
-  bottom: 100px;
-  left: 10px;
-  margin-bottom: 0px;
-}
-
-.tituloJuegos__derecha {
-  font-size: 10rem;
-}
-
-.descripcionJuegos__der {
-  position: absolute;
-  bottom: 80px;
-  right: 10px;
-  margin-top: 0px;
-}
-
-.descripcionJuegos__izq {
-  position: absolute;
-  bottom: 80px;
-  left: 10px;
-  margin-top: 0px;
 }
 
 .divFormulario {
@@ -1166,10 +1047,8 @@ section.gridContenidoCartas h1 {
   grid-area: titulo;
 }
 
-.titulosPaginasJuegos {
+section.gridContenidoCartas article {
   padding: 10px;
-  color: rgba(255, 255, 255, 0.685);
-  background-color: rgba(143, 86, 209, 0.2);
 }
 
 .gridContenidoFichas {
@@ -1207,6 +1086,10 @@ section.gridContenidoFichas h1 {
   grid-area: titulo;
 }
 
+section.gridContenidoFichas article {
+  padding: 10px;
+}
+
 .gridContenidoMesa {
   display: -ms-grid;
   display: grid;
@@ -1240,6 +1123,10 @@ section.gridContenidoMesa h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: titulo;
+}
+
+section.gridContenidoMesa article {
+  padding: 10px;
 }
 
 .grid404 {

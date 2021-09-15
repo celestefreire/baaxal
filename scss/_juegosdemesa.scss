@@ -10,3 +10,5 @@ section.gridContenidoMesa article:first-of-type{grid-area: mesaUno;}
 section.gridContenidoMesa article:nth-of-type(2){grid-area: mesaDos;}
 section.gridContenidoMesa article:last-of-type article{grid-area: mesaTres;}
 section.gridContenidoMesa h1{grid-area: titulo;}    
+
+section.gridContenidoMesa article{padding: 10px;}

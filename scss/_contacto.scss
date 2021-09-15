@@ -1,16 +1,3 @@
-// .gridContenidoContacto{
-//     grid-template-areas: 
-//     "titulo titulo"
-//     "burbuja burbuja burbuja"
-//     "form form form";
-    
-//     grid-template-columns: 1fr 2fr 1fr;
-//     grid-template-rows: 0fr 1fr 3fr;}
-
-// section.gridContenidoContacto h1{grid-area: titulo;}
-// section.gridContenidoContacto article:first-of-type{grid-area: form;}
-// section.gridContenidoContacto article:last-of-type{grid-area: burbuja;}
-
 .divFormulario{display: flex;
     flex-direction: column;
     width: 100%;

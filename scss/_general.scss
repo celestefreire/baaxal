@@ -1,6 +1,12 @@
 html{font-size: 62.5%;
     box-sizing: border-box;}
 
+.pattern{background-image: url(../imagenes/prism.png);}
+
+header{background-color: rgba(131, 118, 109, .2);}
+
+footer{background-color: rgba(131, 118, 109, .4);
+height: 150px;}
 
 h1{color: #BA5C12; 
     font-family: "inconsolata", monospace; 
@@ -14,8 +20,6 @@ h1{color: #BA5C12;
 p{color: #1D80A0; 
     font-family: "montserrat", sans-serif; 
     font-size: 2rem;}
-
-.colorNegro{color:black}
 
 .negrita{font-weight: 600;}
 
@@ -31,24 +35,6 @@ h2{color: #503685;
 
 .colorNaranja{color: #BA5C12;}
 
-
-header{background-color: rgba(131, 118, 109, .2);}
-
-footer{background-color: rgba(131, 118, 109, .4);
-height: 150px;}
-
-nav ul li{color: #261132; 
-    font-size: 2rem; 
-    font-family: "inconsolata", monospace; 
-    font-weight: bold; 
-    text-transform: uppercase;
-}
-
-nav ul li ul li{color: #3E2F5B; 
-    font-size: 2rem;}
-
-.pattern{background-image: url(../imagenes/prism.png);}
-
 .centradoTxt{text-align: center;}
 
 a{text-decoration: none;}
@@ -57,16 +43,18 @@ a{text-decoration: none;}
 
 label{font-size: 2rem;}
 
-.fontSizeQuince{font-size: 1.5rem;}
+nav ul li{color: #261132; 
+    font-size: 2rem; 
+    font-family: "inconsolata", monospace; 
+    font-weight: bold; 
+    text-transform: uppercase;}
 
-ul{padding: 0;}
-
-#margen1{margin: 0;}
-
-
+nav ul li ul li{color: #3E2F5B; 
+    font-size: 2rem;}
 
 ul{ list-style: none;
-    font-size: 0;}
+    font-size: 0;
+    padding: 0;}
 
 li{display: inline-block;
     position: relative;
@@ -83,7 +71,16 @@ margin-left: 0px;}
 
 ul li:hover ul{display: block;}
 
+.piramideHamburguesa{width: 35%;
+    height: 35%;}
+    
+.dropdown-menu{background-color: rgba(241, 166, 67, 0.6);}
+    
+.navbar-dark .navbar-nav .nav-link{color: #ce9136;}
 
+nav{width: 100%;
+    z-index: 999;
+    margin-bottom: 10px;}
 
 .flexMadre{display: flex;
     flex-direction: row;
@@ -99,10 +96,6 @@ ul li:hover ul{display: block;}
     flex-grow: 4;
     margin-right: 10px;
     flex-wrap: wrap;}
-
-nav{width: 100%;
-    z-index: 999;
-    margin-bottom: 10px;}
 
 .header__carrito{
     align-self: center;
@@ -170,14 +163,6 @@ nav{width: 100%;
     align-self: center;
     margin-left: 20px;}
 
-
-
-.imagenesJuegos{max-width: 100%;}
-
-section.gridContenidoMesa article{padding: 10px;}
-section.gridContenidoCartas article{padding: 10px;}
-section.gridContenidoFichas article{padding: 10px;}
-
 h1{background: linear-gradient(to bottom, rgba(131, 118, 109, .2), rgba(131,118,109,.0));
     margin-top: 0px;}
     
@@ -186,12 +171,18 @@ h1{background: linear-gradient(to bottom, rgba(131, 118, 109, .2), rgba(131,118,
     color: $colorTitulo;
 }
 
+$social:(
+    facebook:#2234CF,
+    instagram:#AA22CF,
+    whatsapp:#33FF5E);
+
+@each $red, $color in $social{
+    .socialSombra--#{$red}{
+    filter: drop-shadow(0px 0px 20px $color)}
+}
+
 .tituloPaginas{@include titulos( 5rem, #BA5C12)}
 
-
-.piramideHamburguesa{width: 35%;
-height: 35%;}
-
-.dropdown-menu{background-color: rgba(241, 166, 67, 0.6);}
-
-.navbar-dark .navbar-nav .nav-link{color: #ce9136;}
+.titulosPaginasJuegos{padding: 10px;
+    color: rgba(255, 255, 255, 0.685);
+    background-color: rgba(143, 86, 209, 0.2);}

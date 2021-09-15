@@ -4,167 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO DE LA PAGINA -->
     <title>Juegos de Fichas - Baaxal</title>
+    <!-- SEO -->
     <meta name="keywords" content="juegos de mesa argentinos, juegos de mesa adultos, juegos de mesa para niños, baaxal, jugar a jugar, baaxal juegos, juegos de fichas, juegos de ingenio">
     <meta name="description" content="Baaxal - Jugar a Jugar una creación de Angel Freire, Juegos de mesa originales de producción artesanal, Juegos de estrategia e ingenio para toda la familia, Juegos de fichas">
-
-
+    <!-- TIPOGRAFIAS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP Y LIBRERIAS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/animate.css">
+    <!-- CSS PROPIO -->
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body class="pattern">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-    <header class="flexMadre gridCelularHeader">
-        <div class="header__logo">
-            <img src="../../imagenes/prueba_01.png" alt="baaxal" class="header__logo--tamaño">
-        </div>
-        <div class="header__nav">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  href="../juegos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Juegos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./juegosdemesa.html">Juegos de Mesa</a></li>
-                            <li><a class="dropdown-item" href="./juegosdecartas.html">Juegos de Cartas</a></li>
-                            <li><a class="dropdown-item" href="./juegosdefichas.html">Juegos de Fichas</a></li>
-                        </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                <!-- ENCABEZADO DE PAGINA - HEADER -->
+                <header class="flexMadre gridTabletHeader gridCelularHeader">
+                    <!-- LOGO DE BAAXAL -->
+                    <div class="header__logo">
+                        <img src="../../imagenes/prueba_01.png" alt="baaxal" class="header__logo--tamaño">
                     </div>
-                </div>
-            </nav>
-        </div>
-        <div class="header__carrito">
-            <a href="../carrito.html"><img src="../../imagenes/carrito.png" alt="Carrito de Compras" class="header__carrito--tamaño wow animate__animated animate__flip"></a>    
-        </div>
-    </header>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12">
-    <section class="gridContenidoFichas" id="gridTabletFichas">
-        <h1 class="tituloPaginas">Juegos de Fichas</h1>
-        <article>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="../../imagenes/neuromino_01_1200-1200-min.jpg" class="d-block w-100" alt="Neuromino, un domino con fichas neuronales">
+                    <!-- NAVEGADOR -->
+                    <div class="header__nav">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="../nosotros.html">Nosotros</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="./juegosdemesa.html">Juegos de Mesa</a></li>
+                                                <li><a class="dropdown-item" href="./juegosdecartas.html">Juegos de Cartas</a></li>
+                                                <li><a class="dropdown-item" href="./juegosdefichas.html">Juegos de Fichas</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                    <div class="carousel-item">
-                    <img src="../../imagenes/neuromino_02_1200-1200-min.jpg" class="d-block w-100" alt="Ejemplo de una partida de Neuromino">
+                    <!-- LOGO CARRITO DE COMPRAS -->
+                    <div class="header__carrito">
+                        <a href="../carrito.html"><img src="../../imagenes/carrito.png" alt="Carrito de Compras" class="header__carrito--tamaño wow animate__animated animate__flip"></a>    
                     </div>
-                    <div class="carousel-item">
-                    <img src="../../imagenes/fichasdemo_01_1200-1200-min.jpg" class="d-block w-100" alt="Fichas Baaxal">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                </header>
             </div>
-            <h2 class="titulosPaginasJuegos">NEUROMINO</h2>
-            <p>Un dominó con fichas "neuronales" capaces de provocar una divertida neurosis.</p>
-        </article>
-        <article>
-            <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="../../imagenes/quadromino_01_1200-1200-min.jpg" class="d-block w-100" alt="Quadromino, un domino de cuatro lados">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../../imagenes/quadromino_02_1200-1200-min.jpg" class="d-block w-100" alt="Ejemplo de una partida de Quadromino">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../../imagenes/fichasdemo_01_1200-1200-min.jpg" class="d-block w-100" alt="Fichas Baaxal">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <!-- SECTION JUEGOS DE FICHAS -->
+                <section class="gridContenidoFichas" id="gridTabletFichas">
+                    <!-- TITULO JUEGOS DE FICHAS -->
+                    <h1 class="tituloPaginas">Juegos de Fichas</h1>
+                    <!-- ARTICLE JUEGOS DE FICHAS - NEUROMINO -->
+                    <article>
+                        <!-- CARROUSEL NEUROMINO -->
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../imagenes/neuromino_01_1200-1200-min.jpg" class="d-block w-100" alt="Neuromino, un domino con fichas neuronales">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../imagenes/neuromino_02_1200-1200-min.jpg" class="d-block w-100" alt="Ejemplo de una partida de Neuromino">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../imagenes/fichasdemo_01_1200-1200-min.jpg" class="d-block w-100" alt="Fichas Baaxal">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <!-- TITULO Y EXPLICACION NEUROMINO -->
+                        <h2 class="titulosPaginasJuegos">NEUROMINO</h2>
+                        <p>Un dominó con fichas "neuronales" capaces de provocar una divertida neurosis.</p>
+                    </article>
+                    <!-- ARTICLE JUEGOS DE FICHAS - QUADROMINO -->
+                    <article>
+                        <!-- CARROUSEL QUADROMINO -->
+                        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../imagenes/quadromino_01_1200-1200-min.jpg" class="d-block w-100" alt="Quadromino, un domino de cuatro lados">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../imagenes/quadromino_02_1200-1200-min.jpg" class="d-block w-100" alt="Ejemplo de una partida de Quadromino">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../imagenes/fichasdemo_01_1200-1200-min.jpg" class="d-block w-100" alt="Fichas Baaxal">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <!-- TITULO Y EXPLICACION QUADROMINO -->
+                        <h2 class="titulosPaginasJuegos">QUADRÓMINÓ</h2>
+                        <p>Un dominó de cuatro lados, con caminos que se cortan y colocando piezas siempre obligando a los demás.</p>
+                    </article>
+                    <!-- ARTICLE JUEGOS DE FICHAS - SHERLOCK -->
+                    <article>
+                        <!-- CARROUSEL SHERLOCK -->
+                        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../imagenes/sherlock_01-min.jpg" class="d-block w-100" alt="Sherlock Test, un memotest deductivo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../imagenes/sherlock_02-min.jpg" class="d-block w-100" alt="Fichas de Sherlock Test">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../imagenes/sherlock_03-min.jpg" class="d-block w-100" alt=" Fichas de Sherlock Test">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <!-- TITULO Y EXPLICACION SHERLOCK -->
+                        <h2 class="titulosPaginasJuegos">SHERLOCK TEST</h2>
+                        <p>El clásico memotest, pero con un dado para moverse, anotaciones y la posibilidad de deducir más allá de memorizar.</p>
+                    </article>
+                </section>
             </div>
-            <h2 class="titulosPaginasJuegos">QUADRÓMINÓ</h2>
-            <p>Un dominó de cuatro lados, con caminos que se cortan y colocando piezas siempre obligando a los demás.</p>
-        </article>
-        <article>
-            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="../../imagenes/sherlock_01-min.jpg" class="d-block w-100" alt="Sherlock Test, un memotest deductivo">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <!-- PIE DE PAGINA - FOOTER -->
+                <footer class="flexMadre gridTabletFooter">
+                    <!-- FRASE FOOTER -->
+                    <div class="footer__frase">
+                        <p class="colorNaranja negrita footer__frase--posicion">baaxal - jugar a jugar<br>
+                            una creación de Angel Freire</p>
                     </div>
-                    <div class="carousel-item">
-                    <img src="../../imagenes/sherlock_02-min.jpg" class="d-block w-100" alt="Fichas de Sherlock Test">
+                    <!-- REDES SOCIALES -->
+                    <div class="footer__redes">
+                        <div class="footer__redesContenedor" id="redesSocialesFoot">
+                            <div class="footer__redesFacebook">
+                                <a href="http://www.facebook.com/baaxaljugarajugar" target="_blanck"><img src="../../imagenes/fb.png" alt="Encuentranos en Facebook" class="footer__redes--tamañoImagenes socialSombra--facebook"></a>
+                            </div>
+                            <div class="footer__redesInstagram">
+                                <a href="http://www.instagram.com/baaxal_jugarajugar" target="_blanck"><img src="../../imagenes/ig.png" alt="Encuentranos en Instagram" class="footer__redes--tamañoImagenes socialSombra--instagram"></a>
+                            </div>
+                            <div class="footer__redesWhatsapp">
+                                <a href="http://api.whatsapp.com/send?phone=5492944415786" target="_blanck"><img src="../../imagenes/xp.png" alt="Contactanos en Whatsapp" class="footer__redes--tamañoImagenes socialSombra--whatsapp"></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="../../imagenes/sherlock_03-min.jpg" class="d-block w-100" alt=" Fichas de Sherlock Test">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                </footer>
             </div>
-            <h2 class="titulosPaginasJuegos">SHERLOCK TEST</h2>
-            <p>El clásico memotest, pero con un dado para moverse, anotaciones y la posibilidad de deducir más allá de memorizar.</p>
-        </article>
-    </section>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12">
-    <footer class="flexMadre gridTabletFooter" id="footerCelular" >
-        <div class="footer__frase" id="div1footCelular">
-            <p class="colorNaranja negrita footer__frase--posicion">baaxal - jugar a jugar<br>
-            una creación de Angel Freire</p>
         </div>
-        <div class="footer__redes" id="div2footCelular">
-                <div class="footer__redesContenedor" id="redesSocialesFoot">
-                    <div class="footer__redesFacebook">
-                        <a href="http://www.facebook.com/baaxaljugarajugar" target="_blanck"><img src="../../imagenes/fb.png" alt="Encuentranos en Facebook" class="footer__redes--tamañoImagenes socialSombra--facebook"></a>
-                    </div>
-                    <div class="footer__redesInstagram">
-                        <a href="http://www.instagram.com/baaxal_jugarajugar" target="_blanck"><img src="../../imagenes/ig.png" alt="Encuentranos en Instagram" class="footer__redes--tamañoImagenes socialSombra--instagram"></a>
-                    </div>
-                    <div class="footer__redesWhatsapp">
-                        <a href="http://api.whatsapp.com/send?phone=5492944415786" target="_blanck"><img src="../../imagenes/xp.png" alt="Contactanos en Whatsapp" class="footer__redes--tamañoImagenes socialSombra--whatsapp"></a>
-                    </div>
-                </div>
-        </div>
-    </footer>
-</div>
-</div>
-</div>
+    </div>
+    <!-- BOOTSTRAP Y LIBRERIAS -->
     <script src="../../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="../../js/bootstrap.js"></script>
 </body>
 </html>

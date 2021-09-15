@@ -46,13 +46,6 @@ a.pruebaRelativo img:hover{transform: scale(140%);}
 
 .txtInicio{@include txtH1__inicio(rgba(255, 255, 255, 0.685), 10rem, "inconsolata")}
 
-$social:(
-    facebook:#2234CF,
-    instagram:#AA22CF,
-    whatsapp:#33FF5E);
 
-@each $red, $color in $social{
-    .socialSombra--#{$red}{
-    filter: drop-shadow(0px 0px 20px $color)}
-}
+
 

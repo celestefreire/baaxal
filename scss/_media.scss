@@ -14,9 +14,6 @@ div.header__carrito{grid-area: carrito;
 justify-self: flex-end;}
 div.header__logo{grid-area: logo;}
 
-li{margin-right: 0px;
-margin-left: 0px;}
-
 // footer
 
 .gridTabletFooter{display: grid;
@@ -25,8 +22,7 @@ grid-template-areas:
 "frase";
 
 grid-template-columns: auto;
-grid-template-rows: 0fr 0fr;
-}
+grid-template-rows: 0fr 0fr;}
 
 div.footer__frase{grid-area: frase;
 justify-self: center;
@@ -51,19 +47,18 @@ width: 100%;}
 div.footer__redesWhatsapp{grid-area: ws;
 width: 100%;}
 
-
 footer{height: 200px;}
-
-ul{justify-content: center;}
-
-#tabletSection{flex-direction: column;}
-#tabletHeader{flex-direction: row;}
-
-#responsiveArticle{width: 100%;
-    justify-content: flex-start;}
 
 #redesSocialesFoot{width: 100%;
     margin-left: 20px;}
+
+
+// inicio 
+
+#tabletSection{flex-direction: column;}
+
+#responsiveArticle{width: 100%;
+    justify-content: flex-start;}
 
 // nosotros
 

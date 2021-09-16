@@ -1,9 +1,13 @@
 @charset "UTF-8";
+/* BASE HTML */
+
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+/* BASE PAGINA */
 
 .pattern {
   background-image: url(../imagenes/prism.png);
@@ -17,6 +21,8 @@ footer {
   background-color: rgba(131, 118, 109, 0.4);
   height: 150px;
 }
+
+/* TXT GENERAL */
 
 h1 {
   color: #BA5C12;
@@ -72,6 +78,25 @@ a {
 label {
   font-size: 2rem;
 }
+
+h1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(131, 118, 109, 0.2)), to(rgba(131, 118, 109, 0)));
+  background: linear-gradient(to bottom, rgba(131, 118, 109, 0.2), rgba(131, 118, 109, 0));
+  margin-top: 0px;
+}
+
+.tituloPaginas {
+  font-size: 5rem;
+  color: #BA5C12;
+}
+
+.titulosPaginasJuegos {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.685);
+  background-color: rgba(143, 86, 209, 0.2);
+}
+
+/* NAVEGADOR */
 
 nav ul li {
   color: #261132;
@@ -134,6 +159,8 @@ nav {
   margin-bottom: 10px;
 }
 
+/* BASE FLEX */
+
 .flexMadre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +171,8 @@ nav {
           flex-direction: row;
   width: 100%;
 }
+
+/* HEADER GENERAL */
 
 .header__logo {
   width: 50%;
@@ -179,31 +208,6 @@ nav {
   margin-right: 15px;
 }
 
-.flexNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 100%;
-}
-
-.hijoNav {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
 .header__logo--tamaño {
   max-width: 50%;
   min-width: 200px;
@@ -216,6 +220,8 @@ nav {
   width: 65px;
   height: 65px;
 }
+
+/* FOOTER GENERAL */
 
 .footer__frase {
   width: 50%;
@@ -310,12 +316,6 @@ nav {
   margin-left: 20px;
 }
 
-h1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(131, 118, 109, 0.2)), to(rgba(131, 118, 109, 0)));
-  background: linear-gradient(to bottom, rgba(131, 118, 109, 0.2), rgba(131, 118, 109, 0));
-  margin-top: 0px;
-}
-
 .socialSombra--facebook {
   -webkit-filter: drop-shadow(0px 0px 20px #2234CF);
           filter: drop-shadow(0px 0px 20px #2234CF);
@@ -331,18 +331,12 @@ h1 {
           filter: drop-shadow(0px 0px 20px #33FF5E);
 }
 
-.tituloPaginas {
-  font-size: 5rem;
-  color: #BA5C12;
-}
-
-.titulosPaginasJuegos {
-  padding: 10px;
-  color: rgba(255, 255, 255, 0.685);
-  background-color: rgba(143, 86, 209, 0.2);
-}
+/* MEDIA */
 
 @media screen and (max-width: 768px) {
+
+  /* HEADER MEDIA */
+
   .gridTabletHeader {
     display: -ms-grid;
     display: grid;
@@ -369,10 +363,14 @@ h1 {
     -ms-grid-column: 1;
     grid-area: logo;
   }
+
+  /* FOOTER MEDIA */
+
   .gridTabletFooter {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "redes" "frase";
+        grid-template-areas: "redes"
+ "frase";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 0fr 0fr;
@@ -430,6 +428,9 @@ h1 {
     width: 100%;
     margin-left: 20px;
   }
+
+  /* INICIO MEDIA */
+
   #tabletSection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -442,10 +443,16 @@ h1 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+
+  /* NOSOTROS MEDIA */
+
   #gridTabletNosotros {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "titulo"  "quienes" "historia" "futuro";
+        grid-template-areas: "titulo" 
+ "quienes"
+ "historia"
+ "futuro";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 0fr 0fr 0fr 0fr;
@@ -485,10 +492,16 @@ h1 {
   div.bottom_to_top {
     display: none;
   }
+
+  /* JUEGOS DE CARTAS MEDIA */
+
   #gridTabletCartas {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "titulo" "cartasUno" "cartasDos"  "cartasTres";
+        grid-template-areas: "titulo"
+ "cartasUno"
+ "cartasDos" 
+ "cartasTres";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 0fr 3fr 3fr 3fr;
@@ -515,10 +528,16 @@ h1 {
     -ms-grid-column-span: 3;
     grid-area: titulo;
   }
+
+  /* JUEGOS DE FICHAS MEDIA */
+
   #gridTabletFichas {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "titulo" "fichasUno" "fichasDos" "fichasTres";
+        grid-template-areas: "titulo"
+ "fichasUno"
+ "fichasDos"
+ "fichasTres";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 0fr 3fr 3fr 3fr;
@@ -545,10 +564,16 @@ h1 {
     -ms-grid-column-span: 3;
     grid-area: titulo;
   }
+
+  /* JUEGOS DE MESA MEDIA */
+
   #gridTabletMesa {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "titulo" "mesaUno" "mesaDos" "mesaTres";
+        grid-template-areas: "titulo"
+ "mesaUno"
+ "mesaDos"
+ "mesaTres";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 0fr 3fr 3fr 3fr;
@@ -575,6 +600,9 @@ h1 {
     -ms-grid-column-span: 3;
     grid-area: titulo;
   }
+
+  /* CONTACTO MEDIA */
+
   #flexTabletBurbujas {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -613,16 +641,23 @@ h1 {
   .textoJuegos {
     text-align: center;
   }
+  .imagenesJuegos {
+    max-width: 100%;
+  }
   article div:last-of-type {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 576px) {
+
+  /* HEADER MEDIA 576 */
+
   .gridCelularHeader {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo carrito" "navegador carrito";
+        grid-template-areas: "logo carrito"
+ "navegador carrito";
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto;
@@ -648,9 +683,15 @@ h1 {
     -ms-grid-column: 1;
     grid-area: logo;
   }
+
+  /* FOOTER MEDIA 576 */
+
   p.footer__frase--posicion {
     font-size: 1.5rem;
   }
+
+  /* CONTACTO MEDIA 576 */
+
   #flexTabletBurbujas {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -683,6 +724,8 @@ h1 {
     font-weight: bold;
   }
 }
+
+/* INDEX */
 
 .section__inicio {
   display: -webkit-box;
@@ -761,10 +804,13 @@ a.pruebaRelativo img:hover {
   font-family: "inconsolata";
 }
 
+/* NOSOTROS */
+
 .gridContenidoNosotros {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo"  "quienes historia futuro";
+      grid-template-areas: "titulo titulo titulo" 
+ "quienes historia futuro";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 0fr 5fr;
@@ -854,6 +900,8 @@ div.divNosotrosOculto img {
   font-family: "inconsolata", monospace;
   font-size: 3rem;
 }
+
+/* CONTACTO */
 
 .divFormulario {
   display: -webkit-box;
@@ -1012,10 +1060,13 @@ article.articleBurbujas div:last-of-type {
   margin-left: 20px;
 }
 
+/* JUEGOS DE CARTAS */
+
 .gridContenidoCartas {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "cartasUno cartasDos cartasTres";
+      grid-template-areas: "titulo titulo titulo"
+ "cartasUno cartasDos cartasTres";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 0fr 4fr;
@@ -1051,10 +1102,13 @@ section.gridContenidoCartas article {
   padding: 10px;
 }
 
+/* JUEGOS DE FICHAS */
+
 .gridContenidoFichas {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "fichasUno fichasDos fichasTres";
+      grid-template-areas: "titulo titulo titulo"
+ "fichasUno fichasDos fichasTres";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 0fr 4fr;
@@ -1090,10 +1144,13 @@ section.gridContenidoFichas article {
   padding: 10px;
 }
 
+/* JUEGOS DE MESA */
+
 .gridContenidoMesa {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "mesaUno mesaDos mesaTres";
+      grid-template-areas: "titulo titulo titulo"
+ "mesaUno mesaDos mesaTres";
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 0fr 4fr;
@@ -1129,10 +1186,13 @@ section.gridContenidoMesa article {
   padding: 10px;
 }
 
+/* 404 */
+
 .grid404 {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "cabeza" "relleno";
+      grid-template-areas: "cabeza"
+ "relleno";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 1fr 5fr;
@@ -1154,7 +1214,9 @@ body.grid404 section {
 .gridContenido404 {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". img ." ". txt ." ". acc .";
+      grid-template-areas: ". img ."
+ ". txt ."
+ ". acc .";
   -ms-grid-columns: 1fr 4fr 1fr;
       grid-template-columns: 1fr 4fr 1fr;
   -ms-grid-rows: 4fr 1fr 1fr;
